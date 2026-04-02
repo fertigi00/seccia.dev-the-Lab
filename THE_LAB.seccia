@@ -1,0 +1,3896 @@
+{
+"general": {
+"version": "25"
+},
+"project": {
+"game": {
+"languages": {
+"english": "1",
+"os": "1",
+"native": "English",
+"default": "English"
+},
+"name": "THE_LAB",
+"version": "1.0.0",
+"width": "1820",
+"height": "1024",
+"label_color": "FFFFFF",
+"font_color_menu1": "FFFFFF",
+"font_color_menu2": "57E657",
+"font_color_menu3": "FFFF60",
+"font_color_menu4": "FFFFFF",
+"font_color_credits": "FFFFFF",
+"font_color_credits2": "57E657",
+"light_ambient": "255",
+"merge_audio_text": "1",
+"font": {
+"name": "Cartoon",
+"meta": {
+"aid": "0c3ac439d406ae72"
+},
+"textures": [
+{
+"aid": "b6f833f79cdc1b3f"
+}
+]
+},
+"savegame": {
+"chapters": [
+{},
+{},
+{},
+{},
+{},
+{},
+{},
+{},
+{},
+{},
+{},
+{},
+{},
+{},
+{},
+{}
+]
+}
+},
+"dialog": {
+"speed": "Fast",
+"prompt_color": "FFFFFF",
+"prompt_door_color": "57E657",
+"def_choice_text_color": "FFFFFF",
+"def_choice_text_highlight_color": "57E657",
+"def_choice_back_color": "000000C0",
+"def_talk_text_color": "FFFFFF",
+"comics_talk_text_color": "FFFFFF",
+"movie_margin": "24",
+"movie_talk_text_color": "FFFFFF",
+"vn_choice_text_color": "FFFFFF",
+"vn_choice_text_highlight_color": "57E657",
+"vn_talk_name_color": "FFFFFF",
+"vn_talk_text_color": "FFFFFF",
+"cinematic_text_color": "FFFFFF",
+"cinematic_margin": "24",
+"layouts": {
+"comicsTalk": {
+"back": {
+"x": 42,
+"y": 42,
+"w": 42,
+"h": 42
+},
+"text": {
+"x": 42,
+"y": 42,
+"w": 42,
+"h": 42
+},
+"width": 128,
+"height": 128
+},
+"vnChoice": {
+"text": {
+"x": 83,
+"y": 55,
+"w": 83,
+"h": 55
+},
+"icon": {
+"x": 100,
+"y": 66,
+"w": 50,
+"h": 33
+},
+"width": 250,
+"height": 165
+}
+}
+},
+"configs": [
+{
+"platform": "WINDOWS",
+"name": "windows"
+},
+{
+"platform": "WINDOWS",
+"name": "play_windows"
+},
+{
+"platform": "WEB",
+"name": "play_web",
+"distribution": "Local"
+}
+],
+"palette": {
+"Blue": 16744448,
+"Brown": 2121888,
+"Cyan": 15266376,
+"DarkGreen": 32768,
+"Gold": 2138336,
+"Gray": 10398381,
+"Green": 5760599,
+"Magenta": 15357406,
+"Maroon": 160,
+"Orange": 33023,
+"Pink": 12632319,
+"Purple": 9519498,
+"Red": 3937500,
+"Silver": 12632256,
+"Yellow": 6356991,
+"White": 16777215,
+"User": 16777215,
+"user": 16777215
+},
+"layout": {
+"autosave": {
+"active": true,
+"width": 128,
+"height": 128
+},
+"bag": {
+"active": true,
+"x": 1688,
+"width": 128,
+"height": 128,
+"horz": 2,
+"rclick": true
+},
+"detach": {
+"y": 128,
+"width": 128,
+"height": 128,
+"horz": 2,
+"bag": "Enabled"
+},
+"items": {
+"active": true,
+"y": 880,
+"width": 1820,
+"height": 128,
+"horz": 3,
+"vert": 2,
+"bag": "Enabled"
+},
+"prompt": {
+"active": true,
+"x": 160,
+"y": 16,
+"width": 1500,
+"height": 32,
+"horz": 3
+},
+"magnify": {
+"active": true,
+"width": 400,
+"height": 400,
+"zoom": 200,
+"y": 6
+},
+"menu": {
+"active": true,
+"x": 1688,
+"y": 128,
+"width": 128,
+"height": 128,
+"horz": 2,
+"bag": "Enabled"
+},
+"players": {
+"x": 1688,
+"y": 256,
+"width": 128,
+"height": 512,
+"vert": 3,
+"bag": "Enabled"
+},
+"shutup": {
+"active": true,
+"x": 1688,
+"width": 128,
+"height": 128,
+"horz": 2
+}
+},
+"meta": {
+"nextAssetID": 26
+}
+},
+"puzzle": {
+"board": {
+"nextid": 11,
+"x": 168,
+"y": 168,
+"boxes": [
+{
+"type": 257,
+"id": 1,
+"name": "start",
+"x": 577,
+"y": 315,
+"plugs": [
+{
+"id": 2,
+"type": 3,
+"trgs": [
+6
+]
+}
+]
+},
+{
+"type": 260,
+"id": 3,
+"name": "end",
+"x": 1161,
+"y": 313,
+"plugs": [
+{
+"id": 4,
+"type": 2
+}
+]
+},
+{
+"type": 256,
+"id": 5,
+"name": "#get_the_pass",
+"x": 765,
+"y": 322,
+"plugs": [
+{
+"id": 6,
+"type": 2
+},
+{
+"id": 7,
+"type": 3,
+"trgs": [
+9
+]
+}
+]
+},
+{
+"type": 256,
+"id": 8,
+"name": "#door_open",
+"x": 1004,
+"y": 310,
+"plugs": [
+{
+"id": 9,
+"type": 2
+},
+{
+"id": 10,
+"type": 3,
+"trgs": [
+4
+]
+}
+]
+}
+]
+}
+},
+"logics": [
+{
+"sid": 2,
+"uid": "L_HOME",
+"graph": {
+"board": {
+"nextid": 53,
+"x": 939,
+"y": 519,
+"boxes": [
+{
+"type": 1285,
+"id": 3,
+"x": 569,
+"y": 38,
+"plugs": [
+{
+"id": 4,
+"type": 3,
+"trgs": [
+6
+]
+}
+],
+"var_cmp": "==",
+"scene": "S_HOME",
+"label": "AI"
+},
+{
+"type": 781,
+"id": 5,
+"x": 780,
+"y": 44,
+"plugs": [
+{
+"id": 6,
+"type": 2
+},
+{
+"id": 7,
+"type": 3
+}
+],
+"dialog": "D_AI"
+},
+{
+"type": 1287,
+"id": 8,
+"x": -60,
+"y": 452,
+"plugs": [
+{
+"id": 9,
+"type": 3,
+"trgs": [
+11
+]
+}
+],
+"var_cmp": "==",
+"scene": "S_HOME",
+"instance": "FIOLE_BLEU"
+},
+{
+"type": 788,
+"id": 10,
+"x": 122,
+"y": 444,
+"plugs": [
+{
+"id": 11,
+"type": 2
+},
+{
+"id": 12,
+"type": 3
+}
+],
+"player": "P_HERO",
+"item": "I_FIOLE_BLEU",
+"instance": "FIOLE_BLEU",
+"silent": "False"
+},
+{
+"type": 1287,
+"id": 13,
+"x": -46,
+"y": 566,
+"plugs": [
+{
+"id": 14,
+"type": 3,
+"trgs": [
+16
+]
+}
+],
+"var_cmp": "==",
+"scene": "S_HOME",
+"instance": "FIOLE_ORANGE"
+},
+{
+"type": 788,
+"id": 15,
+"x": 136,
+"y": 558,
+"plugs": [
+{
+"id": 16,
+"type": 2
+},
+{
+"id": 17,
+"type": 3
+}
+],
+"player": "P_HERO",
+"item": "I_FIOLE_ORANGE",
+"instance": "FIOLE_ORANGE",
+"silent": "False"
+},
+{
+"type": 256,
+"id": 18,
+"resize": true,
+"width": 519,
+"height": 274,
+"x": 479,
+"y": -9,
+"name": "AI"
+},
+{
+"type": 256,
+"id": 19,
+"resize": true,
+"width": 644,
+"height": 315,
+"x": -95,
+"y": 390,
+"name": "PICK UP"
+},
+{
+"type": 781,
+"id": 24,
+"x": 702,
+"y": 140,
+"plugs": [
+{
+"id": 25,
+"type": 2
+},
+{
+"id": 26,
+"type": 3
+}
+],
+"dialog": "D_AI",
+"sentence": "10"
+},
+{
+"type": 1291,
+"id": 29,
+"x": 541,
+"y": 145,
+"plugs": [
+{
+"id": 30,
+"type": 3,
+"trgs": [
+25
+]
+}
+],
+"var_cmp": "==",
+"scene": "S_HOME",
+"item": "I_PASS",
+"label": "AI"
+},
+{
+"type": 1285,
+"id": 31,
+"x": -108,
+"y": 110,
+"plugs": [
+{
+"id": 32,
+"type": 3,
+"trgs": [
+34
+]
+}
+],
+"var_cmp": "==",
+"scene": "S_HOME",
+"label": "TUBE_PEOLE"
+},
+{
+"type": 781,
+"id": 33,
+"x": 32,
+"y": 108,
+"plugs": [
+{
+"id": 34,
+"type": 2
+},
+{
+"id": 35,
+"type": 3
+}
+],
+"dialog": "D_TUBEPEOLE"
+},
+{
+"type": 775,
+"id": 38,
+"x": -310,
+"y": 153,
+"plugs": [
+{
+"id": 39,
+"type": 2
+},
+{
+"id": 40,
+"type": 3
+}
+],
+"scene": "S_DOOR"
+},
+{
+"type": 1285,
+"id": 41,
+"x": -464,
+"y": 136,
+"plugs": [
+{
+"id": 42,
+"type": 3,
+"trgs": [
+39
+]
+}
+],
+"var_cmp": "==",
+"scene": "S_HOME",
+"label": "TO_DOOR"
+},
+{
+"type": 1285,
+"id": 43,
+"x": -103,
+"y": 175,
+"plugs": [
+{
+"id": 44,
+"type": 3,
+"trgs": [
+46
+]
+}
+],
+"var_cmp": "==",
+"scene": "S_HOME",
+"label": "TUBEPEOLE"
+},
+{
+"type": 781,
+"id": 45,
+"x": 37,
+"y": 173,
+"plugs": [
+{
+"id": 46,
+"type": 2
+},
+{
+"id": 47,
+"type": 3
+}
+],
+"dialog": "D_TUBEPEOLE"
+},
+{
+"type": 775,
+"id": 48,
+"x": -320,
+"y": 240,
+"plugs": [
+{
+"id": 49,
+"type": 2
+},
+{
+"id": 50,
+"type": 3
+}
+],
+"scene": "S_SUS"
+},
+{
+"type": 1285,
+"id": 51,
+"x": -492,
+"y": 227,
+"plugs": [
+{
+"id": 52,
+"type": 3,
+"trgs": [
+49
+]
+}
+],
+"var_cmp": "==",
+"scene": "S_HOME",
+"label": "SUS"
+}
+]
+}
+}
+},
+{
+"sid": 3,
+"uid": "L_GAME",
+"content": {
+"start": true
+},
+"graph": {
+"board": {
+"nextid": 8,
+"boxes": [
+{
+"type": 257,
+"id": 1,
+"plugs": [
+{
+"id": 2,
+"type": 3
+}
+]
+},
+{
+"id": 3,
+"type": 1309,
+"y": 100,
+"mode": "NEW",
+"plugs": [
+{
+"type": 3,
+"id": 4,
+"trgs": [
+6
+]
+}
+]
+},
+{
+"id": 5,
+"type": 789,
+"x": 200,
+"y": 100,
+"player": "P_HERO",
+"change": "True",
+"plugs": [
+{
+"type": 2,
+"id": 6
+},
+{
+"type": 3,
+"id": 7
+}
+]
+}
+]
+}
+}
+},
+{
+"sid": 13,
+"uid": "L_HERO",
+"graph": {
+"board": {
+"nextid": 44,
+"x": -420,
+"y": -45,
+"boxes": [
+{
+"type": 1290,
+"id": 3,
+"x": 360,
+"y": 177,
+"plugs": [
+{
+"id": 4,
+"type": 3,
+"trgs": [
+6
+]
+}
+],
+"order": 1,
+"var_cmp": "=="
+},
+{
+"type": 781,
+"id": 5,
+"x": 544,
+"y": 176,
+"plugs": [
+{
+"id": 6,
+"type": 2
+},
+{
+"id": 7,
+"type": 3
+}
+],
+"dialog": "D_HERO",
+"sentence": "1"
+},
+{
+"type": 781,
+"id": 8,
+"x": 548,
+"y": 289,
+"plugs": [
+{
+"id": 9,
+"type": 2
+},
+{
+"id": 10,
+"type": 3
+}
+],
+"dialog": "D_HERO",
+"sentence": "1"
+},
+{
+"type": 1307,
+"id": 11,
+"x": 369,
+"y": 292,
+"plugs": [
+{
+"id": 12,
+"type": 3,
+"trgs": [
+9
+]
+}
+],
+"order": 1,
+"var_cmp": "=="
+},
+{
+"type": 1291,
+"id": 13,
+"x": 355,
+"y": 392,
+"plugs": [
+{
+"id": 14,
+"type": 3,
+"trgs": [
+18
+]
+}
+],
+"order": 1,
+"var_cmp": "=="
+},
+{
+"type": 1308,
+"id": 15,
+"x": 357,
+"y": 493,
+"plugs": [
+{
+"id": 16,
+"type": 3,
+"trgs": [
+24
+]
+}
+],
+"order": 1,
+"var_cmp": "=="
+},
+{
+"type": 781,
+"id": 17,
+"x": 540,
+"y": 390,
+"plugs": [
+{
+"id": 18,
+"type": 2
+},
+{
+"id": 19,
+"type": 3
+}
+],
+"dialog": "D_HERO",
+"sentence": "1"
+},
+{
+"type": 781,
+"id": 23,
+"x": 543,
+"y": 491,
+"plugs": [
+{
+"id": 24,
+"type": 2
+},
+{
+"id": 25,
+"type": 3
+}
+],
+"dialog": "D_HERO",
+"sentence": "1"
+},
+{
+"type": 256,
+"id": 26,
+"resize": true,
+"width": 377,
+"height": 484,
+"x": 338,
+"y": 118,
+"name": "CACH-FASE"
+},
+{
+"type": 788,
+"id": 27,
+"x": 1291,
+"y": 93,
+"plugs": [
+{
+"id": 28,
+"type": 2
+},
+{
+"id": 29,
+"type": 3,
+"trgs": [
+42
+]
+}
+],
+"player": "P_HERO",
+"item": "I_PASS",
+"silent": "False"
+},
+{
+"type": 1307,
+"id": 30,
+"x": 988,
+"y": 110,
+"plugs": [
+{
+"id": 31,
+"type": 3,
+"trgs": [
+33
+]
+}
+],
+"var_cmp": "==",
+"item": "I_FIOLE_BLEU",
+"item2": "I_FIOLE_ORANGE"
+},
+{
+"type": 788,
+"id": 32,
+"x": 1138,
+"y": 106,
+"plugs": [
+{
+"id": 33,
+"type": 2
+},
+{
+"id": 34,
+"type": 3,
+"trgs": [
+28
+]
+}
+],
+"player": "DUMP",
+"item": "I_FIOLE_BLEU",
+"item2": "I_FIOLE_ORANGE",
+"silent": "False"
+},
+{
+"type": 256,
+"id": 35,
+"resize": true,
+"width": 708,
+"height": 383,
+"x": 912,
+"name": "FUSION D'OBJET"
+},
+{
+"type": 788,
+"id": 38,
+"x": 1200,
+"y": 544,
+"plugs": [
+{
+"id": 39,
+"type": 2
+},
+{
+"id": 40,
+"type": 3
+}
+],
+"player": "P_HERO",
+"item": "I_PASS",
+"silent": "False"
+},
+{
+"type": 780,
+"id": 41,
+"x": 1409,
+"y": 108,
+"plugs": [
+{
+"id": 42,
+"type": 2
+},
+{
+"id": 43,
+"type": 3
+}
+],
+"puzzle": "#get_the_pass"
+}
+]
+}
+},
+"content": {
+"start": true,
+"order": 10
+}
+},
+{
+"sid": 18,
+"uid": "L_DOOR",
+"graph": {
+"board": {
+"nextid": 45,
+"x": 54,
+"y": 24,
+"boxes": [
+{
+"type": 769,
+"id": 3,
+"x": 681,
+"y": 360,
+"plugs": [
+{
+"id": 4,
+"type": 2
+},
+{
+"id": 5,
+"type": 3
+}
+],
+"scene": "S_DOOR",
+"instance": "ARROW",
+"dir": "FRONT",
+"reverse": "False"
+},
+{
+"type": 257,
+"id": 17,
+"x": 513,
+"y": 367,
+"plugs": [
+{
+"id": 18,
+"type": 3,
+"trgs": [
+4
+]
+}
+]
+},
+{
+"type": 775,
+"id": 19,
+"x": 642,
+"y": 137,
+"plugs": [
+{
+"id": 20,
+"type": 2
+},
+{
+"id": 21,
+"type": 3
+}
+],
+"scene": "S_HOME"
+},
+{
+"type": 1285,
+"id": 22,
+"x": 470,
+"y": 124,
+"plugs": [
+{
+"id": 23,
+"type": 3,
+"trgs": [
+20
+]
+}
+],
+"var_cmp": "==",
+"scene": "S_DOOR",
+"label": "TO_LAB"
+},
+{
+"type": 1285,
+"id": 24,
+"x": 55,
+"y": 165,
+"plugs": [
+{
+"id": 25,
+"type": 3,
+"trgs": [
+33
+]
+}
+],
+"var_cmp": "==",
+"scene": "S_DOOR",
+"label": "DOOR"
+},
+{
+"type": 781,
+"id": 32,
+"x": 194,
+"y": 150,
+"plugs": [
+{
+"id": 33,
+"type": 2
+},
+{
+"id": 34,
+"type": 3
+}
+],
+"dialog": "D_THE_DOOR_HALL",
+"sentence": "1"
+},
+{
+"type": 1287,
+"id": 35,
+"x": 43,
+"y": 340,
+"plugs": [
+{
+"id": 36,
+"type": 3,
+"trgs": [
+38
+]
+}
+],
+"var_cmp": "==",
+"scene": "S_DOOR",
+"instance": "SUPERCAT"
+},
+{
+"type": 781,
+"id": 37,
+"x": 185,
+"y": 341,
+"plugs": [
+{
+"id": 38,
+"type": 2
+},
+{
+"id": 39,
+"type": 3
+}
+],
+"dialog": "D_THE_DOOR_HALL",
+"sentence": "2"
+},
+{
+"type": 1291,
+"id": 40,
+"x": 43,
+"y": 501,
+"plugs": [
+{
+"id": 41,
+"type": 3,
+"trgs": [
+43
+]
+}
+],
+"var_cmp": "==",
+"scene": "S_DOOR",
+"item": "I_PASS",
+"label": "DOOR"
+},
+{
+"type": 780,
+"id": 42,
+"x": 233,
+"y": 494,
+"plugs": [
+{
+"id": 43,
+"type": 2
+},
+{
+"id": 44,
+"type": 3
+}
+],
+"puzzle": "#door_open"
+}
+]
+}
+}
+},
+{
+"sid": 24,
+"uid": "L_SUS",
+"graph": {
+"board": {
+"nextid": 8,
+"boxes": [
+{
+"type": 779,
+"id": 3,
+"x": 387,
+"y": 267,
+"plugs": [
+{
+"id": 4,
+"type": 2
+},
+{
+"id": 5,
+"type": 3
+}
+],
+"script": "set_light_dir S_SUS LIGHT2 $value",
+"duration": "4000",
+"min": "0",
+"max": "360",
+"loop": "-1",
+"pause": "0",
+"reverse": "False",
+"ease_in": "False",
+"ease_out": "False",
+"variable": "value"
+},
+{
+"type": 1284,
+"id": 6,
+"x": 208,
+"y": 290,
+"plugs": [
+{
+"id": 7,
+"type": 3,
+"trgs": [
+4
+]
+}
+],
+"var_cmp": "==",
+"scene": "S_SUS"
+}
+]
+}
+}
+}
+],
+"scenes": [
+{
+"sid": 1,
+"uid": "S_HOME",
+"content": {
+"light_ambient": -1,
+"light_blur": -1,
+"nextID": 15,
+"zoom": 49,
+"x": -182,
+"y": 35
+},
+"layers": {
+"BACK": {
+"opacity_min": 100,
+"opacity_max": 100,
+"opacity_speed": 100,
+"image": {
+"aid": "97210f24e6193bee"
+},
+"texture": {
+"width": 1820,
+"height": 1024,
+"rects": [
+{
+"w": 1820,
+"h": 1024
+}
+],
+"textures": [
+{
+"aid": "b3e136aaf6a5882e"
+}
+]
+}
+},
+"MA": {
+"speed_x": 100,
+"speed_y": 100,
+"parallax": 100,
+"opacity_min": 100,
+"opacity_max": 100,
+"opacity_speed": 100
+},
+"MB": {
+"speed_x": 100,
+"speed_y": 100,
+"parallax": 100,
+"opacity_min": 100,
+"opacity_max": 100,
+"opacity_speed": 100
+},
+"MC": {
+"speed_x": 100,
+"speed_y": 100,
+"parallax": 100,
+"opacity_min": 100,
+"opacity_max": 100,
+"opacity_speed": 100
+},
+"MD": {
+"speed_x": 100,
+"speed_y": 100,
+"parallax": 100,
+"opacity_min": 100,
+"opacity_max": 100,
+"opacity_speed": 100
+},
+"FA": {
+"speed_x": 100,
+"speed_y": 100,
+"parallax": 100,
+"opacity_min": 100,
+"opacity_max": 100,
+"opacity_speed": 100
+},
+"FB": {
+"speed_x": 100,
+"speed_y": 100,
+"parallax": 100,
+"opacity_min": 100,
+"opacity_max": 100,
+"opacity_speed": 100
+},
+"FC": {
+"speed_x": 100,
+"speed_y": 100,
+"parallax": 100,
+"opacity_min": 100,
+"opacity_max": 100,
+"opacity_speed": 100
+},
+"FD": {
+"speed_x": 100,
+"speed_y": 100,
+"parallax": 100,
+"opacity_min": 100,
+"opacity_max": 100,
+"opacity_speed": 100
+}
+},
+"instances": [
+{
+"name": "AI2",
+"uid": "O_AI",
+"id": 3,
+"tags": [
+"",
+"",
+"",
+""
+],
+"x": 1369,
+"y": 322,
+"parallax": 100,
+"opacity": 100,
+"light_ambient": 255,
+"light_diffuse": 16777215,
+"light_angle": 30,
+"light_dist": -1,
+"grids": [
+{},
+{},
+{},
+{},
+{},
+{},
+{},
+{}
+],
+"paths": [
+{},
+{},
+{},
+{},
+{},
+{},
+{},
+{}
+]
+},
+{
+"name": "HERO",
+"uid": "O_HERO",
+"id": 5,
+"tags": [
+"",
+"",
+"",
+""
+],
+"x": 893,
+"y": 1027,
+"parallax": 100,
+"opacity": 100,
+"light_ambient": 255,
+"light_diffuse": 16777215,
+"light_angle": 30,
+"light_dist": -1,
+"grids": [
+{},
+{},
+{},
+{},
+{},
+{},
+{},
+{}
+],
+"paths": [
+{},
+{},
+{},
+{},
+{},
+{},
+{},
+{}
+]
+},
+{
+"name": "FIOLE_BLEU",
+"depths": [
+{
+"a": 28,
+"b": 100
+},
+{
+"y": 1024,
+"a": 28,
+"b": 100
+}
+],
+"uid": "O_FIOLE_BLEU",
+"id": 6,
+"tags": [
+"",
+"",
+"",
+""
+],
+"x": 100,
+"y": 880,
+"parallax": 100,
+"opacity": 100,
+"light_ambient": 255,
+"light_diffuse": 16777215,
+"light_angle": 30,
+"light_dist": -1,
+"grids": [
+{},
+{},
+{},
+{},
+{},
+{},
+{},
+{}
+],
+"paths": [
+{},
+{},
+{},
+{},
+{},
+{},
+{},
+{}
+]
+},
+{
+"name": "FIOLE_ORANGE",
+"depths": [
+{
+"a": 16,
+"b": 100
+},
+{
+"y": 1024,
+"a": 16,
+"b": 100
+}
+],
+"uid": "O_FIOLE_ORANGE",
+"id": 7,
+"tags": [
+"",
+"",
+"",
+""
+],
+"x": 1005,
+"y": 498,
+"parallax": 100,
+"opacity": 100,
+"light_ambient": 255,
+"light_diffuse": 16777215,
+"light_angle": 30,
+"light_dist": -1,
+"grids": [
+{},
+{},
+{},
+{},
+{},
+{},
+{},
+{}
+],
+"paths": [
+{},
+{},
+{},
+{},
+{},
+{},
+{},
+{}
+]
+},
+{
+"name": "ARROW",
+"depths": [
+{
+"a": 51,
+"b": 100
+},
+{
+"y": 1024,
+"a": 51,
+"b": 100
+}
+],
+"uid": "O_ARROW",
+"id": 10,
+"tags": [
+"",
+"",
+"",
+""
+],
+"x": 41,
+"y": 693,
+"parallax": 100,
+"opacity": 100,
+"light_ambient": 255,
+"light_diffuse": 16777215,
+"light_angle": 30,
+"light_dist": -1,
+"grids": [
+{},
+{},
+{},
+{},
+{},
+{},
+{},
+{}
+],
+"paths": [
+{},
+{},
+{},
+{},
+{},
+{},
+{},
+{}
+]
+}
+],
+"labels": [
+{
+"name": "AI",
+"id": 2,
+"tags": [
+"",
+"",
+"",
+""
+],
+"x": 1126,
+"y": 314,
+"width": 506,
+"height": 167,
+"title": {
+"en": "AI"
+}
+},
+{
+"name": "TUBE_PEOLE",
+"id": 8,
+"tags": [
+"",
+"",
+"",
+""
+],
+"x": 155,
+"y": 204,
+"width": 312,
+"height": 373,
+"title": {
+"en": "weird tube"
+}
+},
+{
+"name": "TO_DOOR",
+"id": 11,
+"tags": [
+"",
+"",
+"",
+""
+],
+"x": -32,
+"y": 651,
+"width": 125,
+"height": 61,
+"title": {
+"en": "to the door"
+}
+},
+{
+"name": "TUBEPEOLE",
+"id": 12,
+"tags": [
+"",
+"",
+"",
+""
+],
+"x": 1645,
+"y": 308,
+"width": 182,
+"height": 218,
+"title": {
+"en": "weird tube"
+}
+},
+{
+"name": "SUS",
+"id": 14,
+"tags": [
+"",
+"",
+"",
+""
+],
+"x": 1696,
+"y": 824,
+"width": 38,
+"height": 34,
+"ide_hidden": true
+}
+]
+},
+{
+"sid": 17,
+"uid": "S_DOOR",
+"content": {
+"light_ambient": -1,
+"light_blur": -1,
+"zoom": 49,
+"nextID": 7,
+"effect": "E_THE_DOOR_HALL"
+},
+"layers": {
+"BACK": {
+"opacity_min": 100,
+"opacity_max": 100,
+"opacity_speed": 100,
+"image": {
+"aid": "ea13b9360afeb30e"
+},
+"texture": {
+"width": 1820,
+"height": 1024,
+"rects": [
+{
+"w": 1820,
+"h": 1024
+}
+],
+"textures": [
+{
+"aid": "cbc6a3990b3edd99"
+}
+]
+}
+},
+"MA": {
+"speed_x": 100,
+"speed_y": 100,
+"parallax": 100,
+"opacity_min": 100,
+"opacity_max": 100,
+"opacity_speed": 100
+},
+"MB": {
+"speed_x": 100,
+"speed_y": 100,
+"parallax": 100,
+"opacity_min": 100,
+"opacity_max": 100,
+"opacity_speed": 100
+},
+"MC": {
+"speed_x": 100,
+"speed_y": 100,
+"parallax": 100,
+"opacity_min": 100,
+"opacity_max": 100,
+"opacity_speed": 100
+},
+"MD": {
+"speed_x": 100,
+"speed_y": 100,
+"parallax": 100,
+"opacity_min": 100,
+"opacity_max": 100,
+"opacity_speed": 100
+},
+"FA": {
+"speed_x": 100,
+"speed_y": 100,
+"parallax": 100,
+"opacity_min": 100,
+"opacity_max": 100,
+"opacity_speed": 100
+},
+"FB": {
+"speed_x": 100,
+"speed_y": 100,
+"parallax": 100,
+"opacity_min": 100,
+"opacity_max": 100,
+"opacity_speed": 100
+},
+"FC": {
+"speed_x": 100,
+"speed_y": 100,
+"parallax": 100,
+"opacity_min": 100,
+"opacity_max": 100,
+"opacity_speed": 100
+},
+"FD": {
+"speed_x": 100,
+"speed_y": 100,
+"parallax": 100,
+"opacity_min": 100,
+"opacity_max": 100,
+"opacity_speed": 100
+}
+},
+"instances": [
+{
+"name": "HERO",
+"uid": "O_HERO",
+"id": 2,
+"tags": [
+"",
+"",
+"",
+""
+],
+"x": 896,
+"y": 1025,
+"parallax": 100,
+"opacity": 100,
+"light_ambient": 255,
+"light_diffuse": 16777215,
+"light_angle": 30,
+"light_dist": -1,
+"grids": [
+{},
+{},
+{},
+{},
+{},
+{},
+{},
+{}
+],
+"paths": [
+{},
+{},
+{},
+{},
+{},
+{},
+{},
+{}
+]
+},
+{
+"name": "ARROW",
+"depths": [
+{
+"a": 100,
+"b": 100
+},
+{
+"y": 1024,
+"a": 100,
+"b": 100
+}
+],
+"uid": "O_ARROW",
+"id": 3,
+"tags": [
+"",
+"",
+"",
+""
+],
+"x": 923,
+"y": 936,
+"parallax": 100,
+"placement": "BACK",
+"opacity": 100,
+"light_ambient": 255,
+"light_diffuse": 16777215,
+"light_angle": 30,
+"light_dist": -1,
+"grids": [
+{},
+{},
+{},
+{},
+{},
+{},
+{},
+{}
+],
+"paths": [
+{},
+{},
+{},
+{},
+{},
+{},
+{},
+{}
+]
+},
+{
+"name": "SUPERCAT",
+"depths": [
+{
+"a": 26,
+"b": 100
+},
+{
+"y": 1024,
+"a": 26,
+"b": 100
+}
+],
+"uid": "O_SUPERCAT",
+"id": 5,
+"tags": [
+"",
+"",
+"",
+""
+],
+"x": 81,
+"y": 383,
+"parallax": 100,
+"opacity": 100,
+"light_ambient": 255,
+"light_diffuse": 16777215,
+"light_angle": 30,
+"light_dist": -1,
+"grids": [
+{},
+{},
+{},
+{},
+{},
+{},
+{},
+{}
+],
+"paths": [
+{},
+{},
+{},
+{},
+{},
+{},
+{},
+{}
+]
+},
+{
+"name": "SUS",
+"depths": [
+{
+"a": 43,
+"b": 100
+},
+{
+"y": 1024,
+"a": 43,
+"b": 100
+}
+],
+"uid": "O_SUS",
+"id": 6,
+"tags": [
+"",
+"",
+"",
+""
+],
+"x": 1341,
+"y": 265,
+"parallax": 100,
+"opacity": 2,
+"light_ambient": 255,
+"light_diffuse": 16777215,
+"light_angle": 30,
+"light_dist": -1,
+"grids": [
+{},
+{},
+{},
+{},
+{},
+{},
+{},
+{}
+],
+"paths": [
+{},
+{},
+{},
+{},
+{},
+{},
+{},
+{}
+],
+"ide_hidden": true
+}
+],
+"labels": [
+{
+"name": "DOOR",
+"id": 1,
+"tags": [
+"",
+"",
+"",
+""
+],
+"x": 759,
+"y": 353,
+"width": 353,
+"height": 270,
+"title": {
+"en": "door"
+}
+},
+{
+"name": "TO_LAB",
+"id": 4,
+"tags": [
+"",
+"",
+"",
+""
+],
+"x": 865,
+"y": 830,
+"width": 109,
+"height": 197,
+"title": {
+"en": "to lab"
+}
+}
+]
+},
+{
+"sid": 23,
+"uid": "S_SUS",
+"content": {
+"light_blur": 50,
+"zoom": 49,
+"nextID": 3,
+"effect": "E_THE_DOOR_HALL"
+},
+"layers": {
+"BACK": {
+"opacity_min": 100,
+"opacity_max": 100,
+"opacity_speed": 100,
+"image": {
+"aid": "4e18f3662b0f87f4"
+},
+"texture": {
+"width": 931,
+"height": 722,
+"rects": [
+{
+"w": 931,
+"h": 722
+}
+],
+"textures": [
+{
+"aid": "f147f8c9c6cbee56"
+}
+]
+},
+"ide_hidden": true
+},
+"MA": {
+"speed_x": 100,
+"speed_y": 100,
+"parallax": 100,
+"opacity_min": 100,
+"opacity_max": 100,
+"opacity_speed": 100,
+"image": {
+"aid": "66a57772652dcf22"
+},
+"texture": {
+"width": 225,
+"height": 225,
+"rects": [
+{
+"w": 225,
+"h": 225
+}
+],
+"textures": [
+{
+"aid": "90b7721a12014f2c"
+}
+]
+},
+"collider": {
+"aid": "8ea717dcf4047d7f"
+},
+"offset_y": -831,
+"tile_x": true
+},
+"MB": {
+"speed_x": 100,
+"speed_y": 100,
+"parallax": 100,
+"opacity_min": 100,
+"opacity_max": 100,
+"opacity_speed": 100
+},
+"MC": {
+"speed_x": 100,
+"speed_y": 100,
+"parallax": 100,
+"opacity_min": 100,
+"opacity_max": 100,
+"opacity_speed": 100
+},
+"MD": {
+"speed_x": 100,
+"speed_y": 100,
+"parallax": 100,
+"opacity_min": 100,
+"opacity_max": 100,
+"opacity_speed": 100
+},
+"FA": {
+"speed_x": 100,
+"speed_y": 100,
+"parallax": 100,
+"opacity_min": 100,
+"opacity_max": 100,
+"opacity_speed": 100
+},
+"FB": {
+"speed_x": 100,
+"speed_y": 100,
+"parallax": 100,
+"opacity_min": 100,
+"opacity_max": 100,
+"opacity_speed": 100
+},
+"FC": {
+"speed_x": 100,
+"speed_y": 100,
+"parallax": 100,
+"opacity_min": 100,
+"opacity_max": 100,
+"opacity_speed": 100
+},
+"FD": {
+"speed_x": 100,
+"speed_y": 100,
+"parallax": 100,
+"opacity_min": 100,
+"opacity_max": 100,
+"opacity_speed": 100
+}
+},
+"instances": [
+{
+"name": "LIGHT",
+"uid": "O_LIGHT",
+"id": 1,
+"tags": [
+"",
+"",
+"",
+""
+],
+"x": 472,
+"y": 1280,
+"parallax": 100,
+"opacity": 100,
+"light": true,
+"light_ambient": 255,
+"light_diffuse": 16777215,
+"light_angle": 30,
+"light_dist": -1,
+"grids": [
+{},
+{},
+{},
+{},
+{},
+{},
+{},
+{}
+],
+"paths": [
+{},
+{},
+{},
+{},
+{},
+{},
+{},
+{}
+]
+},
+{
+"name": "HERO",
+"uid": "O_HERO",
+"id": 2,
+"tags": [
+"",
+"",
+"",
+""
+],
+"x": 67,
+"y": 859,
+"parallax": 100,
+"opacity": 100,
+"light_ambient": 255,
+"light_diffuse": 16777215,
+"light_angle": 30,
+"light_dist": -1,
+"grids": [
+{},
+{},
+{},
+{},
+{},
+{},
+{},
+{}
+],
+"paths": [
+{},
+{},
+{},
+{},
+{},
+{},
+{},
+{}
+]
+}
+]
+}
+],
+"objects": [
+{
+"sid": 4,
+"uid": "O_HERO",
+"content": {
+"bbox": true
+},
+"icons": [
+{},
+{},
+{},
+{}
+],
+"anims": [
+{
+"name": "STOP",
+"fps": 6,
+"action": -1,
+"loop_range_max": -1,
+"dirs": [
+{
+"name": "LEFT"
+},
+{
+"name": "RIGHT"
+},
+{
+"name": "FRONT"
+},
+{
+"name": "BACK"
+},
+{
+"name": "FL"
+},
+{
+"name": "FR"
+},
+{
+"name": "BL"
+},
+{
+"name": "BR"
+}
+],
+"loop_count": -1
+},
+{
+"name": "WALK",
+"fps": 6,
+"action": -1,
+"loop_range_max": -1,
+"dirs": [
+{
+"name": "LEFT"
+},
+{
+"name": "RIGHT"
+},
+{
+"name": "FRONT"
+},
+{
+"name": "BACK"
+},
+{
+"name": "FL"
+},
+{
+"name": "FR"
+},
+{
+"name": "BL"
+},
+{
+"name": "BR"
+}
+],
+"loop_count": -1
+},
+{
+"name": "TALK",
+"fps": 6,
+"action": -1,
+"loop_range_max": -1,
+"dirs": [
+{
+"name": "LEFT"
+},
+{
+"name": "RIGHT"
+},
+{
+"name": "FRONT"
+},
+{
+"name": "BACK"
+},
+{
+"name": "FL"
+},
+{
+"name": "FR"
+},
+{
+"name": "BL"
+},
+{
+"name": "BR"
+}
+],
+"loop_count": -1
+}
+]
+},
+{
+"sid": 7,
+"uid": "O_AI",
+"content": {
+"bbox": true,
+"color": "Cyan"
+},
+"icons": [
+{},
+{},
+{},
+{}
+],
+"anims": [
+{
+"name": "STOP",
+"fps": 6,
+"action": -1,
+"loop_range_max": -1,
+"dirs": [
+{
+"name": "LEFT"
+},
+{
+"name": "RIGHT"
+},
+{
+"name": "FRONT"
+},
+{
+"name": "BACK"
+},
+{
+"name": "FL"
+},
+{
+"name": "FR"
+},
+{
+"name": "BL"
+},
+{
+"name": "BR"
+}
+],
+"loop_count": -1
+},
+{
+"name": "WALK",
+"fps": 6,
+"action": -1,
+"loop_range_max": -1,
+"dirs": [
+{
+"name": "LEFT"
+},
+{
+"name": "RIGHT"
+},
+{
+"name": "FRONT"
+},
+{
+"name": "BACK"
+},
+{
+"name": "FL"
+},
+{
+"name": "FR"
+},
+{
+"name": "BL"
+},
+{
+"name": "BR"
+}
+],
+"loop_count": -1
+},
+{
+"name": "TALK",
+"fps": 6,
+"action": -1,
+"loop_range_max": -1,
+"dirs": [
+{
+"name": "LEFT"
+},
+{
+"name": "RIGHT"
+},
+{
+"name": "FRONT"
+},
+{
+"name": "BACK"
+},
+{
+"name": "FL"
+},
+{
+"name": "FR"
+},
+{
+"name": "BL"
+},
+{
+"name": "BR"
+}
+],
+"loop_count": -1
+}
+]
+},
+{
+"sid": 8,
+"uid": "O_FIOLE_BLEU",
+"content": {
+"bbox": true,
+"width": 192,
+"height": 262,
+"x": 95,
+"y": 159
+},
+"icons": [
+{},
+{},
+{},
+{}
+],
+"anims": [
+{
+"name": "STOP",
+"fps": 6,
+"action": -1,
+"loop_range_max": -1,
+"dirs": [
+{
+"name": "LEFT"
+},
+{
+"name": "RIGHT",
+"frames": [
+{
+"image": {
+"hi": {
+"aid": "0828266b649eb619"
+},
+"lo": {
+"aid": "3baae204096e5adb"
+}
+},
+"w": 192,
+"h": 247
+}
+]
+},
+{
+"name": "FRONT"
+},
+{
+"name": "BACK"
+},
+{
+"name": "FL"
+},
+{
+"name": "FR"
+},
+{
+"name": "BL"
+},
+{
+"name": "BR"
+}
+],
+"loop_count": -1
+},
+{
+"name": "WALK",
+"fps": 6,
+"action": -1,
+"loop_range_max": -1,
+"dirs": [
+{
+"name": "LEFT"
+},
+{
+"name": "RIGHT"
+},
+{
+"name": "FRONT"
+},
+{
+"name": "BACK"
+},
+{
+"name": "FL"
+},
+{
+"name": "FR"
+},
+{
+"name": "BL"
+},
+{
+"name": "BR"
+}
+],
+"loop_count": -1
+},
+{
+"name": "TALK",
+"fps": 6,
+"action": -1,
+"loop_range_max": -1,
+"dirs": [
+{
+"name": "LEFT"
+},
+{
+"name": "RIGHT"
+},
+{
+"name": "FRONT"
+},
+{
+"name": "BACK"
+},
+{
+"name": "FL"
+},
+{
+"name": "FR"
+},
+{
+"name": "BL"
+},
+{
+"name": "BR"
+}
+],
+"loop_count": -1
+}
+],
+"packset": {
+"frames": [
+{
+"index2": -1,
+"w": 192,
+"h": 247
+}
+],
+"packs": [
+{
+"count": 1,
+"collider": {
+"aid": "d9e0c2405a22e242"
+},
+"texture": {
+"aid": "045f98a91addf595"
+}
+}
+]
+}
+},
+{
+"sid": 10,
+"uid": "O_FIOLE_ORANGE",
+"content": {
+"bbox": true,
+"width": 192,
+"height": 262,
+"x": 96,
+"y": 153
+},
+"icons": [
+{},
+{},
+{},
+{}
+],
+"anims": [
+{
+"name": "STOP",
+"fps": 6,
+"action": -1,
+"loop_range_max": -1,
+"dirs": [
+{
+"name": "LEFT"
+},
+{
+"name": "RIGHT",
+"frames": [
+{
+"image": {
+"hi": {
+"aid": "f1171d52c2f81d03"
+},
+"lo": {
+"aid": "aaf83a1a8929d51d"
+}
+},
+"w": 192,
+"h": 247
+}
+]
+},
+{
+"name": "FRONT"
+},
+{
+"name": "BACK"
+},
+{
+"name": "FL"
+},
+{
+"name": "FR"
+},
+{
+"name": "BL"
+},
+{
+"name": "BR"
+}
+],
+"loop_count": -1
+},
+{
+"name": "WALK",
+"fps": 6,
+"action": -1,
+"loop_range_max": -1,
+"dirs": [
+{
+"name": "LEFT"
+},
+{
+"name": "RIGHT"
+},
+{
+"name": "FRONT"
+},
+{
+"name": "BACK"
+},
+{
+"name": "FL"
+},
+{
+"name": "FR"
+},
+{
+"name": "BL"
+},
+{
+"name": "BR"
+}
+],
+"loop_count": -1
+},
+{
+"name": "TALK",
+"fps": 6,
+"action": -1,
+"loop_range_max": -1,
+"dirs": [
+{
+"name": "LEFT"
+},
+{
+"name": "RIGHT"
+},
+{
+"name": "FRONT"
+},
+{
+"name": "BACK"
+},
+{
+"name": "FL"
+},
+{
+"name": "FR"
+},
+{
+"name": "BL"
+},
+{
+"name": "BR"
+}
+],
+"loop_count": -1
+}
+],
+"packset": {
+"frames": [
+{
+"index2": -1,
+"w": 192,
+"h": 247
+}
+],
+"packs": [
+{
+"count": 1,
+"collider": {
+"aid": "d29a40b326db4b32"
+},
+"texture": {
+"aid": "4d0e1000ca674062"
+}
+}
+]
+}
+},
+{
+"sid": 16,
+"uid": "O_ARROW",
+"content": {
+"bbox": true,
+"width": 225,
+"height": 225,
+"x": 111,
+"y": 124
+},
+"icons": [
+{},
+{},
+{},
+{}
+],
+"anims": [
+{
+"name": "STOP",
+"fps": 6,
+"action": -1,
+"loop_range_max": -1,
+"dirs": [
+{
+"name": "LEFT",
+"frames": [
+{
+"image": {
+"hi": {
+"aid": "037dfd5489d0da58"
+},
+"lo": {
+"aid": "0dde71d36b3724b8"
+}
+},
+"x": 16,
+"y": 48,
+"w": 181,
+"h": 136
+}
+]
+},
+{
+"name": "RIGHT",
+"frames": [
+{
+"image": {
+"hi": {
+"aid": "c4a88f975286f9f6"
+},
+"lo": {
+"aid": "b7396be799427337"
+}
+},
+"x": 16,
+"y": 41,
+"w": 181,
+"h": 136
+}
+]
+},
+{
+"name": "FRONT",
+"frames": [
+{
+"image": {
+"hi": {
+"aid": "a4b177a52f7cdbfc"
+},
+"lo": {
+"aid": "0585abdd7b67a63c"
+}
+},
+"x": 41,
+"y": 28,
+"w": 136,
+"h": 181
+}
+]
+},
+{
+"name": "BACK"
+},
+{
+"name": "FL"
+},
+{
+"name": "FR"
+},
+{
+"name": "BL"
+},
+{
+"name": "BR"
+}
+],
+"loop_count": -1,
+"flip": true
+},
+{
+"name": "WALK",
+"fps": 6,
+"action": -1,
+"loop_range_max": -1,
+"dirs": [
+{
+"name": "LEFT"
+},
+{
+"name": "RIGHT"
+},
+{
+"name": "FRONT"
+},
+{
+"name": "BACK"
+},
+{
+"name": "FL"
+},
+{
+"name": "FR"
+},
+{
+"name": "BL"
+},
+{
+"name": "BR"
+}
+],
+"loop_count": -1
+},
+{
+"name": "TALK",
+"fps": 6,
+"action": -1,
+"loop_range_max": -1,
+"dirs": [
+{
+"name": "LEFT"
+},
+{
+"name": "RIGHT"
+},
+{
+"name": "FRONT"
+},
+{
+"name": "BACK"
+},
+{
+"name": "FL"
+},
+{
+"name": "FR"
+},
+{
+"name": "BL"
+},
+{
+"name": "BR"
+}
+],
+"loop_count": -1
+}
+],
+"packset": {
+"frames": [
+{
+"index": 2,
+"index2": -1,
+"w": 136,
+"h": 181
+},
+{
+"index2": -1,
+"x": 136,
+"w": 181,
+"h": 136
+},
+{
+"index": 1,
+"index2": -1,
+"flipped": true,
+"x": 136,
+"y": 136,
+"w": 181,
+"h": 136
+}
+],
+"packs": [
+{
+"count": 3,
+"collider": {
+"aid": "2843649157a40603"
+},
+"texture": {
+"aid": "8ab122f4039812dd"
+}
+}
+]
+}
+},
+{
+"sid": 20,
+"uid": "O_SUPERCAT",
+"content": {
+"bbox": true,
+"width": 625,
+"height": 469,
+"x": 319,
+"y": 228
+},
+"icons": [
+{},
+{},
+{},
+{}
+],
+"anims": [
+{
+"name": "STOP",
+"fps": 6,
+"action": -1,
+"loop_range_max": -1,
+"dirs": [
+{
+"name": "LEFT"
+},
+{
+"name": "RIGHT",
+"frames": [
+{
+"image": {
+"hi": {
+"aid": "6e46edc5f5d49c27"
+},
+"lo": {
+"aid": "30141546bae50220"
+}
+},
+"w": 625,
+"h": 469
+}
+]
+},
+{
+"name": "FRONT"
+},
+{
+"name": "BACK"
+},
+{
+"name": "FL"
+},
+{
+"name": "FR"
+},
+{
+"name": "BL"
+},
+{
+"name": "BR"
+}
+],
+"loop_count": -1
+},
+{
+"name": "WALK",
+"fps": 6,
+"action": -1,
+"loop_range_max": -1,
+"dirs": [
+{
+"name": "LEFT"
+},
+{
+"name": "RIGHT"
+},
+{
+"name": "FRONT"
+},
+{
+"name": "BACK"
+},
+{
+"name": "FL"
+},
+{
+"name": "FR"
+},
+{
+"name": "BL"
+},
+{
+"name": "BR"
+}
+],
+"loop_count": -1
+},
+{
+"name": "TALK",
+"fps": 6,
+"action": -1,
+"loop_range_max": -1,
+"dirs": [
+{
+"name": "LEFT"
+},
+{
+"name": "RIGHT"
+},
+{
+"name": "FRONT"
+},
+{
+"name": "BACK"
+},
+{
+"name": "FL"
+},
+{
+"name": "FR"
+},
+{
+"name": "BL"
+},
+{
+"name": "BR"
+}
+],
+"loop_count": -1
+}
+],
+"packset": {
+"frames": [
+{
+"index2": -1,
+"w": 625,
+"h": 469
+}
+],
+"packs": [
+{
+"count": 1,
+"texture": {
+"aid": "cfa70d9423ffcd3e"
+}
+}
+]
+}
+},
+{
+"sid": 22,
+"uid": "O_SUS",
+"content": {
+"bbox": true,
+"width": 931,
+"height": 722
+},
+"icons": [
+{},
+{},
+{},
+{}
+],
+"anims": [
+{
+"name": "STOP",
+"fps": 6,
+"action": -1,
+"loop_range_max": -1,
+"dirs": [
+{
+"name": "LEFT"
+},
+{
+"name": "RIGHT",
+"frames": [
+{
+"image": {
+"hi": {
+"aid": "81395edb5c9435f9"
+},
+"lo": {
+"aid": "bfd5388cc89da258"
+}
+},
+"w": 931,
+"h": 722
+}
+]
+},
+{
+"name": "FRONT"
+},
+{
+"name": "BACK"
+},
+{
+"name": "FL"
+},
+{
+"name": "FR"
+},
+{
+"name": "BL"
+},
+{
+"name": "BR"
+}
+],
+"loop_count": -1
+},
+{
+"name": "WALK",
+"fps": 6,
+"action": -1,
+"loop_range_max": -1,
+"dirs": [
+{
+"name": "LEFT"
+},
+{
+"name": "RIGHT"
+},
+{
+"name": "FRONT"
+},
+{
+"name": "BACK"
+},
+{
+"name": "FL"
+},
+{
+"name": "FR"
+},
+{
+"name": "BL"
+},
+{
+"name": "BR"
+}
+],
+"loop_count": -1
+},
+{
+"name": "TALK",
+"fps": 6,
+"action": -1,
+"loop_range_max": -1,
+"dirs": [
+{
+"name": "LEFT"
+},
+{
+"name": "RIGHT"
+},
+{
+"name": "FRONT"
+},
+{
+"name": "BACK"
+},
+{
+"name": "FL"
+},
+{
+"name": "FR"
+},
+{
+"name": "BL"
+},
+{
+"name": "BR"
+}
+],
+"loop_count": -1
+}
+],
+"packset": {
+"frames": [
+{
+"index2": -1,
+"w": 931,
+"h": 722
+}
+],
+"packs": [
+{
+"count": 1,
+"texture": {
+"aid": "9a24e99a858cd944"
+}
+}
+]
+}
+},
+{
+"sid": 25,
+"uid": "O_LIGHT",
+"content": {
+"bbox": true
+},
+"icons": [
+{},
+{},
+{},
+{}
+],
+"anims": [
+{
+"name": "STOP",
+"fps": 6,
+"action": -1,
+"loop_range_max": -1,
+"dirs": [
+{
+"name": "LEFT"
+},
+{
+"name": "RIGHT"
+},
+{
+"name": "FRONT"
+},
+{
+"name": "BACK"
+},
+{
+"name": "FL"
+},
+{
+"name": "FR"
+},
+{
+"name": "BL"
+},
+{
+"name": "BR"
+}
+],
+"loop_count": -1
+},
+{
+"name": "WALK",
+"fps": 6,
+"action": -1,
+"loop_range_max": -1,
+"dirs": [
+{
+"name": "LEFT"
+},
+{
+"name": "RIGHT"
+},
+{
+"name": "FRONT"
+},
+{
+"name": "BACK"
+},
+{
+"name": "FL"
+},
+{
+"name": "FR"
+},
+{
+"name": "BL"
+},
+{
+"name": "BR"
+}
+],
+"loop_count": -1
+},
+{
+"name": "TALK",
+"fps": 6,
+"action": -1,
+"loop_range_max": -1,
+"dirs": [
+{
+"name": "LEFT"
+},
+{
+"name": "RIGHT"
+},
+{
+"name": "FRONT"
+},
+{
+"name": "BACK"
+},
+{
+"name": "FL"
+},
+{
+"name": "FR"
+},
+{
+"name": "BL"
+},
+{
+"name": "BR"
+}
+],
+"loop_count": -1
+}
+]
+}
+],
+"players": [
+{
+"sid": 5,
+"uid": "P_HERO",
+"content": {
+"scroll_smooth": 50,
+"zoom_smooth": 50,
+"path_color": -1,
+"object": "O_HERO",
+"scene": "S_HOME"
+},
+"icons": [
+{
+"image": {
+"aid": "1b9aa5a901ce35de"
+},
+"texture": {
+"aid": "17cce1ce4d24490d"
+}
+},
+{},
+{},
+{}
+]
+}
+],
+"images": {
+"APP_ANDROID": {
+"image": {
+"aid": "8fc0b74dbc5c437e"
+},
+"texture": {
+"aid": "4c45a6e1f61c0460"
+}
+},
+"APP_IOS": {
+"image": {
+"aid": "40276d30abbb25c0"
+},
+"texture": {
+"aid": "2f11100b027ba2a1"
+}
+},
+"APP_WINDOWS": {
+"image": {
+"aid": "91e726eae875632f"
+},
+"texture": {
+"aid": "af1fb2d4fa648658"
+}
+},
+"DIALOG_COMICS_TALK": {
+"image": {
+"aid": "48d7ea5ae6551d02"
+},
+"texture": {
+"aid": "772cb804e26ba9fd"
+}
+},
+"DIALOG_VN_CHOICE": {
+"image": {
+"aid": "0ef6c97b8a3bb980"
+},
+"texture": {
+"aid": "67ad2c7e44e7cc41"
+}
+},
+"CURSOR": {
+"image": {
+"aid": "5330e6d86e5ca3e1"
+},
+"texture": {
+"aid": "046b26c81294d47b"
+}
+},
+"LAYOUT_AUTOSAVE": {
+"image": {
+"aid": "f5004835639bd012"
+},
+"texture": {
+"aid": "c974503e4656856d"
+}
+},
+"LAYOUT_BAG": {
+"image": {
+"aid": "ddadcf7c382ca695"
+},
+"texture": {
+"aid": "c3354ccfaa5959a8"
+}
+},
+"LAYOUT_MAGNIFY": {
+"image": {
+"aid": "bb15efb81605c2c3"
+},
+"texture": {
+"aid": "aaf3729232e2a1a8"
+}
+},
+"LAYOUT_MENU": {
+"image": {
+"aid": "dee5c7856e4816fb"
+},
+"texture": {
+"aid": "372326e015df25d9"
+}
+},
+"LAYOUT_OBJECT": {
+"image": {
+"aid": "56110f0a49fc9e23"
+},
+"texture": {
+"aid": "6a10b6bb6e6ab714"
+}
+},
+"LAYOUT_OBJECT_PREV": {
+"image": {
+"aid": "c5fb2256ee0e0eb7"
+},
+"texture": {
+"aid": "50dd8251cc3b19f0"
+}
+},
+"LAYOUT_OBJECT_NEXT": {
+"image": {
+"aid": "7f5a6233fc5cb00b"
+},
+"texture": {
+"aid": "dab91fc218f801ab"
+}
+},
+"LAYOUT_PLAYER": {
+"image": {
+"aid": "8bf8aa3c5085ef66"
+},
+"texture": {
+"aid": "4eddd674ceb8ac97"
+}
+},
+"LAYOUT_SHUTUP": {
+"image": {
+"aid": "374f26dbf3de5d36"
+},
+"texture": {
+"aid": "a9cfca913c733653"
+}
+},
+"MENU": {
+"image": {
+"aid": "07ee7736c325e08b"
+},
+"texture": {
+"aid": "b0231ff1d0b414e9"
+}
+}
+},
+"dialogs": [
+{
+"sid": 6,
+"uid": "D_AI",
+"content": {
+"sentence": {
+"voice": {
+"en": [
+{},
+{},
+{},
+{}
+]
+},
+"sentences": [
+{
+"id": 1,
+"choice": true,
+"text": {
+"en": "Where am I?"
+},
+"voice": {
+"en": [
+{},
+{},
+{},
+{}
+]
+},
+"sentences": [
+{
+"id": 2,
+"sentences": [
+{
+"id": 3,
+"choice": true,
+"sentences": [
+{
+"id": 6,
+"voice": {
+"en": [
+{},
+{},
+{},
+{}
+]
+},
+"exit": true,
+"speaker": "O_AI",
+"text": {
+"en": "no there not"
+}
+}
+],
+"text": {
+"en": "yes"
+},
+"voice": {
+"en": [
+{},
+{},
+{},
+{}
+]
+},
+"never_hide": true
+},
+{
+"id": 4,
+"choice": true,
+"sentences": [
+{
+"id": 7,
+"voice": {
+"en": [
+{},
+{},
+{},
+{}
+]
+},
+"exit": true,
+"speaker": "O_AI",
+"text": {
+"en": "ok have a good day"
+}
+}
+],
+"text": {
+"en": "no"
+},
+"voice": {
+"en": [
+{},
+{},
+{},
+{}
+]
+},
+"never_hide": true
+},
+{
+"id": 5,
+"choice": true,
+"sentences": [
+{
+"id": 8,
+"voice": {
+"en": [
+{},
+{},
+{},
+{}
+]
+},
+"exit": true,
+"speaker": "O_AI",
+"text": {
+"en": "you can go out now "
+}
+}
+],
+"text": {
+"en": "cheese"
+},
+"voice": {
+"en": [
+{},
+{},
+{},
+{}
+]
+},
+"never_hide": true
+}
+],
+"text": {
+"en": "Is there a problem?"
+},
+"voice": {
+"en": [
+{},
+{},
+{},
+{}
+]
+},
+"speaker": "O_AI"
+}
+],
+"never_hide": true
+},
+{
+"id": 10,
+"text": {
+"en": "where did you find that give it back"
+},
+"voice": {
+"en": [
+{},
+{},
+{},
+{}
+]
+},
+"speaker": "O_AI",
+"exit": true
+}
+]
+},
+"nextID": 14
+}
+},
+{
+"sid": 12,
+"uid": "D_HERO",
+"content": {
+"sentence": {
+"sentences": [
+{
+"id": 1,
+"text": {
+"en": "It's not a good idea.\r\n\r\nWhat?\r\n\r\nNope.\r\n\r\nI don't understand how I could use these both together."
+},
+"speaker": "O_HERO",
+"voice": {
+"en": [
+{},
+{},
+{},
+{}
+]
+},
+"randomly": true
+}
+],
+"voice": {
+"en": [
+{},
+{},
+{},
+{}
+]
+}
+},
+"nextID": 2
+}
+},
+{
+"sid": 15,
+"uid": "D_TUBEPEOLE",
+"content": {
+"sentence": {
+"voice": {
+"en": [
+{},
+{},
+{},
+{}
+]
+},
+"sentences": [
+{
+"id": 1,
+"text": {
+"en": "why there someone in there?"
+},
+"voice": {
+"en": [
+{},
+{},
+{},
+{}
+]
+},
+"sentences": [
+{
+"id": 2,
+"text": {
+"en": "is noting to worry about"
+},
+"voice": {
+"en": [
+{},
+{},
+{},
+{}
+]
+},
+"sentences": [
+{
+"id": 3,
+"text": {
+"en": "so is it a holograme or a real perssone"
+},
+"voice": {
+"en": [
+{},
+{},
+{},
+{}
+]
+},
+"speaker": "O_HERO",
+"exit": true
+}
+],
+"speaker": "O_AI"
+}
+],
+"speaker": "O_HERO"
+}
+]
+},
+"nextID": 4
+}
+},
+{
+"sid": 19,
+"uid": "D_THE_DOOR_HALL",
+"content": {
+"sentence": {
+"voice": {
+"en": [
+{},
+{},
+{},
+{}
+]
+},
+"sentences": [
+{
+"id": 1,
+"text": {
+"en": "is lock"
+},
+"voice": {
+"en": [
+{},
+{},
+{},
+{}
+]
+},
+"speaker": "O_HERO"
+},
+{
+"id": 2,
+"text": {
+"en": "what a weird ad\r\n"
+},
+"voice": {
+"en": [
+{},
+{},
+{},
+{}
+]
+},
+"speaker": "O_HERO"
+}
+]
+},
+"nextID": 3
+}
+}
+],
+"items": [
+{
+"sid": 9,
+"uid": "I_FIOLE_BLEU",
+"content": {
+"title": {
+"en": "fiole bleu"
+}
+},
+"icons": [
+{
+"image": {
+"aid": "e50e96f33e1a37c7"
+},
+"texture": {
+"aid": "60e33834c2dac6fc"
+}
+},
+{},
+{},
+{}
+]
+},
+{
+"sid": 11,
+"uid": "I_FIOLE_ORANGE",
+"icons": [
+{
+"image": {
+"aid": "be50e87fdc667961"
+},
+"texture": {
+"aid": "9483b7316d089830"
+}
+},
+{},
+{},
+{}
+],
+"content": {
+"title": {
+"en": "fiole orange"
+}
+}
+},
+{
+"sid": 14,
+"uid": "I_PASS",
+"icons": [
+{
+"image": {
+"aid": "06d3453232d73686"
+},
+"texture": {
+"aid": "436b9a9018a0bd9c"
+}
+},
+{},
+{},
+{}
+],
+"content": {
+"title": {
+"en": "pass"
+}
+}
+}
+],
+"effects": [
+{
+"sid": 21,
+"uid": "E_THE_DOOR_HALL",
+"content": {
+"items": [
+{
+"name": "GRAIN",
+"enabled": true,
+"mix": 0.2,
+"output": {
+"scene": {
+"ma": true,
+"mb": true,
+"mc": true,
+"md": true,
+"object": true,
+"back": true,
+"fa": true,
+"fb": true,
+"fc": true,
+"fd": true
+}
+}
+},
+{
+"name": "LUT",
+"enabled": true,
+"mix": 1.0,
+"output": {
+"scene": {
+"ma": true,
+"mb": true,
+"mc": true,
+"md": true,
+"object": true,
+"back": true,
+"fa": true,
+"fb": true,
+"fc": true,
+"fd": true
+}
+},
+"style": "Crisp Winter"
+}
+]
+}
+}
+]
+}
