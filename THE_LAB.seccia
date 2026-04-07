@@ -223,8 +223,8 @@
 "puzzle": {
 "board": {
 "nextid": 35,
-"x": 168,
-"y": 188,
+"x": 338,
+"y": 292,
 "boxes": [
 {
 "type": 257,
@@ -259,8 +259,8 @@
 "type": 256,
 "id": 5,
 "name": "#get_the_pass",
-"x": 1058,
-"y": 335,
+"x": 946,
+"y": 320,
 "plugs": [
 {
 "id": 6,
@@ -299,8 +299,8 @@
 "type": 256,
 "id": 11,
 "name": "#coffe_open",
-"x": 941,
-"y": 153,
+"x": 688,
+"y": 282,
 "plugs": [
 {
 "id": 12,
@@ -1391,7 +1391,7 @@
 "uid": "L_SUS",
 "graph": {
 "board": {
-"nextid": 20,
+"nextid": 34,
 "x": -256,
 "y": 192,
 "boxes": [
@@ -1401,8 +1401,8 @@
 "resize": true,
 "width": 346,
 "height": 184,
-"x": 1017,
-"y": -112,
+"x": 764,
+"y": -171,
 "name": "DON'T WORK"
 },
 {
@@ -1446,8 +1446,8 @@
 {
 "type": 771,
 "id": 14,
-"x": 897,
-"y": 165,
+"x": 773,
+"y": 161,
 "plugs": [
 {
 "id": 15,
@@ -1461,7 +1461,7 @@
 ]
 }
 ],
-"duration": "1000"
+"duration": "100"
 },
 {
 "type": 775,
@@ -2133,9 +2133,9 @@
 "uid": "L_KEYPAD",
 "graph": {
 "board": {
-"nextid": 525,
-"x": 210,
-"y": 255,
+"nextid": 632,
+"x": -366,
+"y": 127,
 "boxes": [
 {
 "type": 1285,
@@ -2670,8 +2670,8 @@
 {
 "type": 780,
 "id": 308,
-"x": 1126,
-"y": 497,
+"x": 1114,
+"y": 498,
 "plugs": [
 {
 "id": 309,
@@ -2693,7 +2693,7 @@
 "uid": "L_EXPOSITION",
 "graph": {
 "board": {
-"nextid": 23,
+"nextid": 28,
 "boxes": [
 {
 "type": 769,
@@ -2834,6 +2834,42 @@
 "var_cmp": "==",
 "scene": "S_EXPOSITION",
 "label": "ARROW_TOCAFETY_FORM_EXPO"
+},
+{
+"type": 1285,
+"id": 23,
+"x": 828,
+"y": 138,
+"plugs": [
+{
+"id": 24,
+"type": 3,
+"trgs": [
+26
+]
+}
+],
+"var_cmp": "==",
+"scene": "S_EXPOSITION",
+"label": "WEIRD_PLANT"
+},
+{
+"type": 781,
+"id": 25,
+"x": 991,
+"y": 114,
+"plugs": [
+{
+"id": 26,
+"type": 2
+},
+{
+"id": 27,
+"type": 3
+}
+],
+"dialog": "D_BUREAU",
+"sentence": "4"
 }
 ]
 }
@@ -14657,8 +14693,8 @@
 "uid": "S_SUS",
 "content": {
 "light_blur": -1,
-"zoom": 49,
-"nextID": 3,
+"zoom": 34,
+"nextID": 4,
 "light_ambient": -1
 },
 "layers": {
@@ -14667,7 +14703,7 @@
 "opacity_max": 100,
 "opacity_speed": 100,
 "image": {
-"aid": "32d09fd323ff142e"
+"aid": "05722d2c778788bd"
 },
 "texture": {
 "width": 1820,
@@ -14680,7 +14716,7 @@
 ],
 "textures": [
 {
-"aid": "6ae2cf85d7dc399f"
+"aid": "d7c951beb48cf492"
 }
 ]
 }
@@ -14768,7 +14804,6 @@
 "y": 1280,
 "parallax": 100,
 "opacity": 100,
-"light": true,
 "light_ambient": 255,
 "light_diffuse": 16777215,
 "light_angle": 30,
@@ -38173,7 +38208,10 @@
 },
 {
 "col": 56,
-"row": 50
+"row": 50,
+"link_sel_label": {
+"label": "WEIRD_PLANT"
+}
 },
 {
 "col": 57,
@@ -38852,7 +38890,7 @@
 ],
 "labels": [
 {
-"name": "LABEL",
+"name": "WEIRD_PLANT",
 "id": 3,
 "tags": [
 "",
@@ -38911,7 +38949,7 @@
 "light_ambient": -1,
 "light_blur": -1,
 "zoom": 49,
-"nextID": 4
+"nextID": 5
 },
 "layers": {
 "BACK": {
@@ -39089,6 +39127,56 @@
 ],
 "x": 1092,
 "y": 547,
+"parallax": 100,
+"opacity": 100,
+"light_ambient": 255,
+"light_diffuse": 16777215,
+"light_angle": 30,
+"light_dist": -1,
+"grids": [
+{},
+{},
+{},
+{},
+{},
+{},
+{},
+{}
+],
+"paths": [
+{},
+{},
+{},
+{},
+{},
+{},
+{},
+{}
+]
+},
+{
+"name": "FIOLE_ORANGE",
+"depths": [
+{
+"a": 34,
+"b": 100
+},
+{
+"y": 1024,
+"a": 34,
+"b": 100
+}
+],
+"uid": "O_FIOLE_ORANGE",
+"id": 4,
+"tags": [
+"",
+"",
+"",
+""
+],
+"x": 724,
+"y": 728,
 "parallax": 100,
 "opacity": 100,
 "light_ambient": 255,
@@ -46681,7 +46769,8 @@
 {}
 ]
 },
-"never_hide": true
+"never_hide": true,
+"do_not_say": true
 },
 {
 "id": 4,
@@ -46715,7 +46804,8 @@
 {}
 ]
 },
-"never_hide": true
+"never_hide": true,
+"do_not_say": true
 },
 {
 "id": 5,
@@ -46766,7 +46856,8 @@
 "speaker": "O_AI"
 }
 ],
-"never_hide": true
+"never_hide": true,
+"do_not_say": true
 },
 {
 "id": 10,
@@ -46846,7 +46937,7 @@
 {
 "id": 2,
 "text": {
-"en": "je sius une oqzevb normal et hd"
+"en": "*Se réveille*"
 },
 "voice": {
 "en": [
@@ -46860,7 +46951,7 @@
 {
 "id": 3,
 "text": {
-"en": "et je ne sais pas ou je suis "
+"en": "... ma tête me fait mal, où est ce que je suis?"
 },
 "voice": {
 "en": [
@@ -46874,7 +46965,7 @@
 {
 "id": 4,
 "text": {
-"en": "oh no !"
+"en": "y a quelqu'un?"
 },
 "voice": {
 "en": [
@@ -46903,7 +46994,7 @@
 ]
 }
 },
-"nextID": 5
+"nextID": 6
 }
 },
 {
@@ -47067,10 +47158,25 @@
 ]
 },
 "speaker": "O_HERO"
+},
+{
+"id": 4,
+"text": {
+"en": "what a weird plant"
+},
+"voice": {
+"en": [
+{},
+{},
+{},
+{}
+]
+},
+"speaker": "O_HERO"
 }
 ]
 },
-"nextID": 4
+"nextID": 5
 }
 },
 {
