@@ -214,7 +214,7 @@
 }
 },
 "meta": {
-"nextAssetID": 67
+"nextAssetID": 68
 },
 "credits": {
 "en": "me and my cooequier\r\n\r\nour cat for the moral suport\r\n",
@@ -223,7 +223,7 @@
 },
 "puzzle": {
 "board": {
-"nextid": 90,
+"nextid": 99,
 "x": 519,
 "y": 322,
 "boxes": [
@@ -231,14 +231,14 @@
 "type": 257,
 "id": 1,
 "name": "start",
-"x": 846,
-"y": 343,
+"x": -496,
+"y": 225,
 "plugs": [
 {
 "id": 2,
 "type": 3,
 "trgs": [
-54
+30
 ]
 }
 ]
@@ -260,8 +260,8 @@
 "type": 256,
 "id": 5,
 "name": "#get_the_pass",
-"x": 160,
-"y": 40,
+"x": 265,
+"y": 94,
 "plugs": [
 {
 "id": 6,
@@ -280,8 +280,8 @@
 "type": 256,
 "id": 8,
 "name": "#door_open",
-"x": 324,
-"y": 49,
+"x": 343,
+"y": 40,
 "plugs": [
 {
 "id": 9,
@@ -300,8 +300,8 @@
 "type": 256,
 "id": 11,
 "name": "#coffe_open",
-"x": 25,
-"y": 71,
+"x": 163,
+"y": 19,
 "plugs": [
 {
 "id": 12,
@@ -421,8 +421,8 @@
 "type": 256,
 "id": 59,
 "name": "#open_arkive_door",
-"x": 726,
-"y": 252,
+"x": 780,
+"y": 177,
 "plugs": [
 {
 "id": 60,
@@ -430,7 +430,10 @@
 },
 {
 "id": 61,
-"type": 3
+"type": 3,
+"trgs": [
+54
+]
 }
 ]
 },
@@ -491,8 +494,8 @@
 "type": 256,
 "id": 87,
 "name": "#see_coffer",
-"x": -109,
-"y": 141,
+"x": -168,
+"y": 144,
 "plugs": [
 {
 "id": 88,
@@ -502,8 +505,61 @@
 "id": 89,
 "type": 3,
 "trgs": [
+94,
+91
+]
+}
+]
+},
+{
+"type": 256,
+"id": 90,
+"name": "#find_sluse",
+"x": -30,
+"y": 15,
+"plugs": [
+{
+"id": 91,
+"type": 2
+},
+{
+"id": 92,
+"type": 3,
+"trgs": [
+94
+]
+}
+]
+},
+{
+"type": 261,
+"id": 93,
+"name": "or",
+"x": 75,
+"y": 126,
+"plugs": [
+{
+"id": 94,
+"type": 2
+},
+{
+"id": 95,
+"type": 2
+},
+{
+"id": 96,
+"type": 3,
+"trgs": [
 12
 ]
+},
+{
+"id": 97,
+"type": 3
+},
+{
+"id": 98,
+"type": 3
 }
 ]
 }
@@ -516,9 +572,9 @@
 "uid": "L_LAB",
 "graph": {
 "board": {
-"nextid": 211,
+"nextid": 219,
 "x": 804,
-"y": 499,
+"y": 371,
 "boxes": [
 {
 "type": 1285,
@@ -889,6 +945,65 @@
 }
 ],
 "puzzle": "#start"
+},
+{
+"type": 1284,
+"id": 211,
+"x": -158,
+"y": 162,
+"plugs": [
+{
+"id": 212,
+"type": 3,
+"trgs": [
+214
+]
+}
+],
+"resolved": "#door_open",
+"unresolved": "#door_expo_open_",
+"var_cmp": "==",
+"scene": "S_LAB",
+"mode": "JUMP"
+},
+{
+"type": 781,
+"id": 213,
+"x": 30,
+"y": 162,
+"plugs": [
+{
+"id": 214,
+"type": 2
+},
+{
+"id": 215,
+"type": 3,
+"trgs": [
+217
+]
+}
+],
+"dialog": "D_HERO",
+"sentence": "8",
+"sentence2": "9"
+},
+{
+"type": 780,
+"id": 216,
+"x": 253,
+"y": 156,
+"plugs": [
+{
+"id": 217,
+"type": 2
+},
+{
+"id": 218,
+"type": 3
+}
+],
+"puzzle": "#door_expo_open_"
 }
 ]
 }
@@ -902,7 +1017,7 @@
 },
 "graph": {
 "board": {
-"nextid": 23,
+"nextid": 36,
 "x": 336,
 "y": 416,
 "boxes": [
@@ -924,8 +1039,8 @@
 {
 "type": 789,
 "id": 5,
-"x": 200,
-"y": 100,
+"x": 154,
+"y": 101,
 "plugs": [
 {
 "id": 6,
@@ -933,7 +1048,10 @@
 },
 {
 "id": 7,
-"type": 3
+"type": 3,
+"trgs": [
+34
+]
 }
 ],
 "player": "P_HERO",
@@ -969,7 +1087,10 @@
 },
 {
 "id": 12,
-"type": 3
+"type": 3,
+"trgs": [
+24
+]
 }
 ],
 "visible": "True",
@@ -1049,6 +1170,47 @@
 "var_cmp": "==",
 "puzzle": "#find_monster",
 "mode": "EXIT"
+},
+{
+"type": 786,
+"id": 23,
+"x": 437,
+"y": -51,
+"plugs": [
+{
+"id": 24,
+"type": 2
+},
+{
+"id": 25,
+"type": 3
+}
+],
+"visible": "True",
+"dialog": "D_AI",
+"choice": "22"
+},
+{
+"type": 787,
+"id": 33,
+"x": 285,
+"y": 100,
+"plugs": [
+{
+"id": 34,
+"type": 2
+},
+{
+"id": 35,
+"type": 3
+}
+],
+"song": "MAIN_SONG",
+"channel": "0",
+"volume": "100",
+"loop": "True",
+"crossfade": "0",
+"last": "False"
 }
 ]
 }
@@ -1777,8 +1939,8 @@
 {
 "type": 775,
 "id": 34,
-"x": 797,
-"y": 295,
+"x": 902,
+"y": 284,
 "plugs": [
 {
 "id": 35,
@@ -1827,8 +1989,8 @@
 ]
 }
 ],
-"dialog": "D_AI",
-"sentence": "5"
+"dialog": "D_HERO",
+"sentence": "7"
 }
 ]
 }
@@ -2012,21 +2174,6 @@
 "scene": "S_HALLWAY"
 },
 {
-"type": 1300,
-"id": 29,
-"x": 737,
-"y": 161,
-"plugs": [
-{
-"id": 30,
-"type": 3
-}
-],
-"var_cmp": "==",
-"scene": "S_HALLWAY",
-"mode": "ENTER"
-},
-{
 "type": 783,
 "id": 37,
 "x": 985,
@@ -2045,8 +2192,7 @@
 "instance": "DEMON",
 "cell": "HALLRUN_END",
 "cell2": "HALLRUN_START",
-"anim": "WALK",
-"straight": "False",
+"straight": "True",
 "duration": "0",
 "ease_in": "True",
 "ease_out": "True"
@@ -2442,15 +2588,15 @@
 "uid": "L_BUREAU",
 "graph": {
 "board": {
-"nextid": 41,
+"nextid": 49,
 "x": 118,
 "y": 4,
 "boxes": [
 {
 "type": 1285,
 "id": 3,
-"x": 352,
-"y": 263,
+"x": 98,
+"y": 117,
 "plugs": [
 {
 "id": 4,
@@ -2467,8 +2613,8 @@
 {
 "type": 781,
 "id": 5,
-"x": 628,
-"y": 336,
+"x": 429,
+"y": 213,
 "plugs": [
 {
 "id": 6,
@@ -2484,8 +2630,8 @@
 {
 "type": 769,
 "id": 8,
-"x": 517,
-"y": 414,
+"x": 263,
+"y": 268,
 "plugs": [
 {
 "id": 9,
@@ -2504,8 +2650,8 @@
 {
 "type": 257,
 "id": 11,
-"x": 347,
-"y": 396,
+"x": 93,
+"y": 250,
 "plugs": [
 {
 "id": 12,
@@ -2519,8 +2665,8 @@
 {
 "type": 775,
 "id": 13,
-"x": 519,
-"y": 524,
+"x": 265,
+"y": 378,
 "plugs": [
 {
 "id": 14,
@@ -2536,8 +2682,8 @@
 {
 "type": 1285,
 "id": 16,
-"x": 346,
-"y": 504,
+"x": 92,
+"y": 358,
 "plugs": [
 {
 "id": 17,
@@ -2554,8 +2700,8 @@
 {
 "type": 1285,
 "id": 18,
-"x": 352,
-"y": 620,
+"x": 98,
+"y": 474,
 "plugs": [
 {
 "id": 19,
@@ -2572,8 +2718,8 @@
 {
 "type": 775,
 "id": 20,
-"x": 501,
-"y": 607,
+"x": 247,
+"y": 461,
 "plugs": [
 {
 "id": 21,
@@ -2592,15 +2738,15 @@
 "resize": true,
 "width": 328,
 "height": 430,
-"x": 330,
-"y": 253,
+"x": 76,
+"y": 107,
 "name": "TRUCK BUREAU"
 },
 {
 "type": 775,
 "id": 26,
-"x": 705,
-"y": 270,
+"x": 432,
+"y": 128,
 "plugs": [
 {
 "id": 27,
@@ -2616,8 +2762,8 @@
 {
 "type": 1031,
 "id": 35,
-"x": 494,
-"y": 278,
+"x": 240,
+"y": 132,
 "plugs": [
 {
 "id": 36,
@@ -2647,6 +2793,62 @@
 }
 ],
 "puzzle": "#coffe_open"
+},
+{
+"type": 1285,
+"id": 41,
+"x": 553,
+"y": 303,
+"plugs": [
+{
+"id": 42,
+"type": 3,
+"trgs": [
+47
+]
+}
+],
+"var_cmp": "==",
+"scene": "S_BUREAU",
+"label": "BUREAUCOMPUTER"
+},
+{
+"type": 781,
+"id": 43,
+"x": 857,
+"y": 275,
+"plugs": [
+{
+"id": 44,
+"type": 2
+},
+{
+"id": 45,
+"type": 3
+}
+],
+"dialog": "D_BUREAU",
+"sentence": "12"
+},
+{
+"type": 780,
+"id": 46,
+"x": 703,
+"y": 308,
+"plugs": [
+{
+"id": 47,
+"type": 2
+},
+{
+"id": 48,
+"type": 3,
+"trgs": [
+44
+]
+}
+],
+"puzzle": "#find_sluse"
 }
 ]
 }
@@ -2657,7 +2859,7 @@
 "uid": "L_KEYPAD",
 "graph": {
 "board": {
-"nextid": 1167,
+"nextid": 1702,
 "x": -366,
 "y": 127,
 "boxes": [
@@ -3092,7 +3294,7 @@
 ]
 }
 ],
-"script": "if equal $code \"112233\"\r\n\tout 1\r\nelse \r\n\tout 0\r\nend",
+"script": "if equal $code \"990077\"\r\n\tout 1\r\nelse \r\n\tout 0\r\nend",
 "plugCount": 2
 },
 {
@@ -3563,9 +3765,9 @@
 "uid": "L_STAIRE",
 "graph": {
 "board": {
-"nextid": 57,
-"x": -109,
-"y": 130,
+"nextid": 60,
+"x": 144,
+"y": 124,
 "boxes": [
 {
 "type": 775,
@@ -3684,7 +3886,10 @@
 },
 {
 "id": 25,
-"type": 3
+"type": 3,
+"trgs": [
+58
+]
 }
 ],
 "scene": "S_EXPERIENT_ROOM"
@@ -3850,6 +4055,23 @@
 }
 ],
 "puzzle": "#see_staire_bob"
+},
+{
+"type": 780,
+"id": 57,
+"x": 360,
+"y": -4,
+"plugs": [
+{
+"id": 58,
+"type": 2
+},
+{
+"id": 59,
+"type": 3
+}
+],
+"puzzle": "#find_monster"
 }
 ]
 }
@@ -3878,7 +4100,7 @@
 "id": 7,
 "type": 3,
 "trgs": [
-47
+44
 ]
 },
 {
@@ -4100,8 +4322,8 @@
 {
 "type": 786,
 "id": 43,
-"x": 789,
-"y": 130,
+"x": 782,
+"y": 146,
 "plugs": [
 {
 "id": 44,
@@ -4119,26 +4341,6 @@
 "scene": "S_DOOR_TO_EXPO",
 "instance": "ARROW",
 "label": "DOORTO_EXPO"
-},
-{
-"type": 780,
-"id": 46,
-"x": 660,
-"y": 162,
-"plugs": [
-{
-"id": 47,
-"type": 2
-},
-{
-"id": 48,
-"type": 3,
-"trgs": [
-44
-]
-}
-],
-"puzzle": "#door_expo_open_"
 }
 ]
 }
@@ -4149,7 +4351,7 @@
 "uid": "L_EXPERIENT_ROOM",
 "graph": {
 "board": {
-"nextid": 51,
+"nextid": 54,
 "x": 34,
 "y": 101,
 "boxes": [
@@ -4457,6 +4659,27 @@
 "var_cmp": "==",
 "scene": "S_EXPERIENT_ROOM",
 "mode": "JUMP"
+},
+{
+"type": 787,
+"id": 51,
+"x": 569,
+"y": -24,
+"plugs": [
+{
+"id": 52,
+"type": 2
+},
+{
+"id": 53,
+"type": 3
+}
+],
+"channel": "0",
+"volume": "100",
+"loop": "True",
+"crossfade": "10",
+"last": "False"
 }
 ]
 }
@@ -5080,7 +5303,7 @@
 "uid": "L_ARCKIVE",
 "graph": {
 "board": {
-"nextid": 44,
+"nextid": 47,
 "x": 128,
 "y": 32,
 "boxes": [
@@ -5202,8 +5425,8 @@
 {
 "type": 780,
 "id": 21,
-"x": 270,
-"y": 409,
+"x": 268,
+"y": 324,
 "plugs": [
 {
 "id": 22,
@@ -5211,7 +5434,10 @@
 },
 {
 "id": 23,
-"type": 3
+"type": 3,
+"trgs": [
+45
+]
 }
 ],
 "puzzle": "#distrai_monter"
@@ -5300,8 +5526,8 @@
 {
 "type": 1286,
 "id": 39,
-"x": 47,
-"y": 405,
+"x": 14,
+"y": 381,
 "plugs": [
 {
 "id": 40,
@@ -5314,6 +5540,28 @@
 "var_cmp": "==",
 "dialog": "D_PURPUL_COMPUTER",
 "sentence": "9"
+},
+{
+"type": 787,
+"id": 44,
+"x": 420,
+"y": 212,
+"plugs": [
+{
+"id": 45,
+"type": 2
+},
+{
+"id": 46,
+"type": 3
+}
+],
+"song": "ACTIVE_MONSTER",
+"channel": "0",
+"volume": "100",
+"loop": "True",
+"crossfade": "1002",
+"last": "False"
 }
 ]
 }
@@ -9662,19 +9910,6 @@
 "name": "TIMELINE",
 "shots": [
 {
-"id": 18,
-"time": 31,
-"duration": 29,
-"cut": {
-"splines": [
-{},
-{},
-{},
-{}
-]
-}
-},
-{
 "id": 17,
 "duration": 31,
 "cut": {
@@ -9752,13 +9987,26 @@
 }
 ]
 }
+},
+{
+"id": 18,
+"time": 31,
+"duration": 9,
+"cut": {
+"splines": [
+{},
+{},
+{},
+{}
+]
+}
 }
 ],
 "titles": [
 {
 "duration": 26,
 "text": {
-"en": "hello and welcome"
+"en": "YOU OK BUR"
 }
 }
 ]
@@ -9771,8 +10019,8 @@
 "content": {
 "light_ambient": -1,
 "light_blur": -1,
-"zoom": 49,
-"nextID": 10,
+"zoom": 66,
+"nextID": 11,
 "effect": "E_THE_DOOR_HALL",
 "x": -318,
 "y": -34
@@ -17010,8 +17258,8 @@
 "",
 ""
 ],
-"x": 81,
-"y": 383,
+"x": 82,
+"y": 384,
 "parallax": 100,
 "opacity": 100,
 "light_ambient": 255,
@@ -17090,6 +17338,56 @@
 ],
 "ide_hidden": true,
 "no_cheat": true
+},
+{
+"name": "ZERO",
+"depths": [
+{
+"a": 12,
+"b": 100
+},
+{
+"y": 1024,
+"a": 12,
+"b": 100
+}
+],
+"uid": "O_ZERO",
+"id": 10,
+"tags": [
+"",
+"",
+"",
+""
+],
+"x": 43,
+"y": 423,
+"parallax": 100,
+"opacity": 16,
+"light_ambient": 255,
+"light_diffuse": 16777215,
+"light_angle": 30,
+"light_dist": -1,
+"grids": [
+{},
+{},
+{},
+{},
+{},
+{},
+{},
+{}
+],
+"paths": [
+{},
+{},
+{},
+{},
+{},
+{},
+{},
+{}
+]
 }
 ],
 "labels": [
@@ -17134,7 +17432,7 @@
 "uid": "S_SUS",
 "content": {
 "light_blur": -1,
-"zoom": 49,
+"zoom": 66,
 "nextID": 4,
 "light_ambient": -1
 },
@@ -34461,6 +34759,309 @@
 {
 "col": 61,
 "row": 65
+},
+{
+"col": 39,
+"row": 50
+},
+{
+"col": 39,
+"row": 51
+},
+{
+"col": 39,
+"row": 52
+},
+{
+"col": 38,
+"row": 51
+},
+{
+"col": 38,
+"row": 52
+},
+{
+"col": 38,
+"row": 53
+},
+{
+"col": 37,
+"row": 53
+},
+{
+"col": 37,
+"row": 54
+},
+{
+"col": 37,
+"row": 55
+},
+{
+"col": 36,
+"row": 54,
+"link_sel_label": {
+"label": "BUREAUCOMPUTER"
+}
+},
+{
+"col": 36,
+"row": 55
+},
+{
+"col": 36,
+"row": 56
+},
+{
+"col": 36,
+"row": 57
+},
+{
+"col": 36,
+"row": 58
+},
+{
+"col": 36,
+"row": 59
+},
+{
+"col": 35,
+"row": 56
+},
+{
+"col": 35,
+"row": 57
+},
+{
+"col": 35,
+"row": 58
+},
+{
+"col": 35,
+"row": 59
+},
+{
+"col": 35,
+"row": 60
+},
+{
+"col": 36,
+"row": 60
+},
+{
+"col": 34,
+"row": 57
+},
+{
+"col": 34,
+"row": 58
+},
+{
+"col": 34,
+"row": 59
+},
+{
+"col": 34,
+"row": 60
+},
+{
+"col": 34,
+"row": 61
+},
+{
+"col": 35,
+"row": 61
+},
+{
+"col": 36,
+"row": 61
+},
+{
+"col": 33,
+"row": 58
+},
+{
+"col": 33,
+"row": 59
+},
+{
+"col": 33,
+"row": 60
+},
+{
+"col": 33,
+"row": 61
+},
+{
+"col": 32,
+"row": 59
+},
+{
+"col": 32,
+"row": 60
+},
+{
+"col": 32,
+"row": 61
+},
+{
+"col": 32,
+"row": 62
+},
+{
+"col": 33,
+"row": 62
+},
+{
+"col": 34,
+"row": 62
+},
+{
+"col": 35,
+"row": 62
+},
+{
+"col": 31,
+"row": 59
+},
+{
+"col": 31,
+"row": 60
+},
+{
+"col": 31,
+"row": 61
+},
+{
+"col": 31,
+"row": 62
+},
+{
+"col": 31,
+"row": 63
+},
+{
+"col": 32,
+"row": 63
+},
+{
+"col": 33,
+"row": 63
+},
+{
+"col": 34,
+"row": 63
+},
+{
+"col": 30,
+"row": 60
+},
+{
+"col": 30,
+"row": 61
+},
+{
+"col": 30,
+"row": 62
+},
+{
+"col": 30,
+"row": 63
+},
+{
+"col": 29,
+"row": 60
+},
+{
+"col": 29,
+"row": 61
+},
+{
+"col": 29,
+"row": 62
+},
+{
+"col": 29,
+"row": 63
+},
+{
+"col": 29,
+"row": 64
+},
+{
+"col": 30,
+"row": 64
+},
+{
+"col": 31,
+"row": 64
+},
+{
+"col": 32,
+"row": 64
+},
+{
+"col": 28,
+"row": 61
+},
+{
+"col": 28,
+"row": 62
+},
+{
+"col": 28,
+"row": 63
+},
+{
+"col": 28,
+"row": 64
+},
+{
+"col": 28,
+"row": 65
+},
+{
+"col": 29,
+"row": 65
+},
+{
+"col": 30,
+"row": 65
+},
+{
+"col": 31,
+"row": 65
+},
+{
+"col": 32,
+"row": 65
+},
+{
+"col": 33,
+"row": 64
+},
+{
+"col": 33,
+"row": 65
+},
+{
+"col": 34,
+"row": 64
+},
+{
+"col": 34,
+"row": 65
+},
+{
+"col": 35,
+"row": 63
+},
+{
+"col": 35,
+"row": 64
+},
+{
+"col": 36,
+"row": 62
 }
 ]
 },
@@ -34662,7 +35263,7 @@
 "content": {
 "light_ambient": -1,
 "light_blur": -1,
-"zoom": 49,
+"zoom": 66,
 "nextID": 14,
 "x": -71,
 "y": -28
@@ -47623,7 +48224,7 @@
 "content": {
 "light_ambient": -1,
 "light_blur": -1,
-"zoom": 49,
+"zoom": 66,
 "nextID": 8,
 "x": -426,
 "y": -107
@@ -62495,7 +63096,10 @@
 },
 {
 "col": 47,
-"row": 47
+"row": 47,
+"link_sel_label": {
+"label": "BURRO_DE_OFFICE"
+}
 },
 {
 "col": 47,
@@ -62976,6 +63580,16 @@
 {
 "col": 53,
 "row": 64
+},
+{
+"col": 67,
+"row": 51,
+"link_sel_instance": {
+"instance": "FIOLE_BLEU"
+},
+"link_use_instance": {
+"item": "I_FIOLE_BLEU"
+}
 }
 ]
 },
@@ -71196,6 +71810,160 @@
 "loop_count": -1
 }
 ]
+},
+{
+"sid": 67,
+"uid": "O_ZERO",
+"content": {
+"bbox": true,
+"width": 225,
+"height": 225,
+"x": 113,
+"y": 112
+},
+"icons": [
+{},
+{},
+{},
+{}
+],
+"anims": [
+{
+"name": "STOP",
+"fps": 6,
+"action": -1,
+"loop_range_max": -1,
+"dirs": [
+{
+"name": "LEFT"
+},
+{
+"name": "RIGHT",
+"frames": [
+{
+"image": {
+"hi": {
+"aid": "d17da604f18dcf2c"
+},
+"lo": {
+"aid": "cf4329a1b3cb24f6"
+}
+},
+"x": 49,
+"y": 11,
+"w": 133,
+"h": 213
+}
+]
+},
+{
+"name": "FRONT"
+},
+{
+"name": "BACK"
+},
+{
+"name": "FL"
+},
+{
+"name": "FR"
+},
+{
+"name": "BL"
+},
+{
+"name": "BR"
+}
+],
+"loop_count": -1
+},
+{
+"name": "WALK",
+"fps": 6,
+"action": -1,
+"loop_range_max": -1,
+"dirs": [
+{
+"name": "LEFT"
+},
+{
+"name": "RIGHT"
+},
+{
+"name": "FRONT"
+},
+{
+"name": "BACK"
+},
+{
+"name": "FL"
+},
+{
+"name": "FR"
+},
+{
+"name": "BL"
+},
+{
+"name": "BR"
+}
+],
+"loop_count": -1
+},
+{
+"name": "TALK",
+"fps": 6,
+"action": -1,
+"loop_range_max": -1,
+"dirs": [
+{
+"name": "LEFT"
+},
+{
+"name": "RIGHT"
+},
+{
+"name": "FRONT"
+},
+{
+"name": "BACK"
+},
+{
+"name": "FL"
+},
+{
+"name": "FR"
+},
+{
+"name": "BL"
+},
+{
+"name": "BR"
+}
+],
+"loop_count": -1
+}
+],
+"packset": {
+"frames": [
+{
+"index2": -1,
+"w": 133,
+"h": 213
+}
+],
+"packs": [
+{
+"count": 1,
+"collider": {
+"aid": "c41e562c2a4e5582"
+},
+"texture": {
+"aid": "dc982b476dae573e"
+}
+}
+]
+}
 }
 ],
 "players": [
@@ -71207,7 +71975,7 @@
 "zoom_smooth": 50,
 "path_color": -1,
 "object": "O_HERO",
-"scene": "S_ARCKIVE"
+"scene": "S_SUS"
 },
 "icons": [
 {
@@ -71493,6 +72261,40 @@
 "hidden": true
 },
 {
+"id": 22,
+"choice": true,
+"sentences": [
+{
+"id": 23,
+"text": {
+"en": "Oh. You're talking about #è{çù!}? He was the employe of the month just recently he's a really superstitious person he always says that the number 7 is his lucky number"
+},
+"voice": {
+"en": [
+{},
+{},
+{},
+{}
+]
+},
+"speaker": "O_AI",
+"exit": true
+}
+],
+"text": {
+"en": "You know the guy who used to work in the office?"
+},
+"voice": {
+"en": [
+{},
+{},
+{},
+{}
+]
+},
+"hidden": true
+},
+{
 "id": 17,
 "choice": true,
 "sentences": [
@@ -71512,7 +72314,8 @@
 {}
 ]
 },
-"speaker": "O_AI"
+"speaker": "O_AI",
+"exit": true
 }
 ],
 "text": {
@@ -71559,7 +72362,8 @@
 {}
 ]
 },
-"speaker": "O_AI"
+"speaker": "O_AI",
+"exit": true
 }
 ],
 "text": {
@@ -71615,7 +72419,7 @@
 {
 "id": 16,
 "text": {
-"en": "hello "
+"en": "Hum?"
 },
 "voice": {
 "en": [
@@ -71629,7 +72433,7 @@
 }
 ],
 "text": {
-"en": "*touche keybord*"
+"en": "*touch keyboard*"
 },
 "voice": {
 "en": [
@@ -71640,10 +72444,84 @@
 ]
 },
 "speaker": "O_HERO"
+},
+{
+"id": 24,
+"sentences": [
+{
+"id": 25,
+"text": {
+"en": "or else $^ù# will catch you"
+},
+"voice": {
+"en": [
+{},
+{},
+{},
+{}
+]
+},
+"speaker": "O_AI"
+}
+],
+"text": {
+"en": "You manage to get the keycard? Be careful with it"
+},
+"voice": {
+"en": [
+{},
+{},
+{},
+{}
+]
+},
+"speaker": "O_AI"
+},
+{
+"id": 26,
+"text": {
+"en": "1. "
+},
+"voice": {
+"en": [
+{},
+{},
+{},
+{}
+]
+}
+},
+{
+"id": 27,
+"text": {
+"en": "2. "
+},
+"voice": {
+"en": [
+{},
+{},
+{},
+{}
+]
+}
+},
+{
+"id": 28,
+"text": {
+"en": "3. "
+},
+"voice": {
+"en": [
+{},
+{},
+{},
+{}
+]
+}
 }
 ]
 },
-"nextID": 22
+"nextID": 29
 }
 },
 {
@@ -71764,11 +72642,23 @@
 {},
 {}
 ]
+},
+"text": {
+"en": "Now it's gone"
+},
+"speaker": "O_AI"
 }
+],
+"text": {
+"en": "Told you to be careful with that key"
+},
+"speaker": "O_AI"
 }
-]
-}
-]
+],
+"text": {
+"en": "WHAT WAS THAT?!"
+},
+"speaker": "O_HERO"
 }
 ],
 "voice": {
@@ -71800,7 +72690,7 @@
 {
 "id": 1,
 "text": {
-"en": "why there someone in there?"
+"en": "why is there someone in there?"
 },
 "voice": {
 "en": [
@@ -71814,7 +72704,7 @@
 {
 "id": 2,
 "text": {
-"en": "is noting to worry about"
+"en": "$ù$^/-\" there's nothing to worry about"
 },
 "voice": {
 "en": [
@@ -71828,7 +72718,7 @@
 {
 "id": 3,
 "text": {
-"en": "so is it a holograme or a real perssone"
+"en": "So is it an hologram or a real person?"
 },
 "voice": {
 "en": [
@@ -71869,7 +72759,7 @@
 {
 "id": 1,
 "text": {
-"en": "is lock"
+"en": "it's lock"
 },
 "voice": {
 "en": [
@@ -71884,7 +72774,7 @@
 {
 "id": 2,
 "text": {
-"en": "what a weird ad\r\n"
+"en": "That AD is weird"
 },
 "voice": {
 "en": [
@@ -71916,9 +72806,113 @@
 },
 "sentences": [
 {
-"id": 1,
+"id": 12,
+"sentences": [
+{
+"id": 13,
+"choice": true,
+"sentences": [
+{
+"id": 16,
 "text": {
-"en": "is lock"
+"en": "The food is terrible here can't wait to go at my favorite restaurant and order their number 9"
+},
+"voice": {
+"en": [
+{},
+{},
+{},
+{}
+]
+},
+"speaker": "O_HERO"
+}
+],
+"text": {
+"en": "1. "
+},
+"voice": {
+"en": [
+{},
+{},
+{},
+{}
+]
+},
+"never_hide": true,
+"do_not_say": true
+},
+{
+"id": 14,
+"choice": true,
+"sentences": [
+{
+"id": 17,
+"text": {
+"en": "We got a visit from some japanese employe they are nice people, that little AD's so cute "
+},
+"voice": {
+"en": [
+{},
+{},
+{},
+{}
+]
+},
+"speaker": "O_HERO"
+}
+],
+"text": {
+"en": "2."
+},
+"voice": {
+"en": [
+{},
+{},
+{},
+{}
+]
+},
+"never_hide": true,
+"do_not_say": true
+},
+{
+"id": 15,
+"choice": true,
+"sentences": [
+{
+"id": 18,
+"text": {
+"en": "First day here, and everyone is so depressed, i can barely communicate with the others. \r\nThere is only one person i've been able to talk with and he's a complet morron"
+},
+"voice": {
+"en": [
+{},
+{},
+{},
+{}
+]
+},
+"speaker": "O_HERO"
+}
+],
+"text": {
+"en": "3."
+},
+"voice": {
+"en": [
+{},
+{},
+{},
+{}
+]
+},
+"never_hide": true,
+"do_not_say": true
+}
+],
+"text": {
+"en": "is open"
 },
 "voice": {
 "en": [
@@ -71931,9 +72925,9 @@
 "speaker": "O_HERO"
 },
 {
-"id": 3,
+"id": 1,
 "text": {
-"en": "the food as gonne bad can eat that "
+"en": "It's lock"
 },
 "voice": {
 "en": [
@@ -71943,7 +72937,24 @@
 {}
 ]
 },
-"speaker": "O_HERO"
+"speaker": "O_HERO",
+"exit": true
+},
+{
+"id": 3,
+"text": {
+"en": "the food as gone bad can eat that "
+},
+"voice": {
+"en": [
+{},
+{},
+{},
+{}
+]
+},
+"speaker": "O_HERO",
+"exit": true
 },
 {
 "id": 4,
@@ -71958,12 +72969,13 @@
 {}
 ]
 },
-"speaker": "O_HERO"
+"speaker": "O_HERO",
+"exit": true
 },
 {
 "id": 5,
 "text": {
-"en": "sais pascieux\r\n"
+"en": "So much space in here\r\n"
 },
 "voice": {
 "en": [
@@ -71973,7 +72985,8 @@
 {}
 ]
 },
-"speaker": "O_HERO"
+"speaker": "O_HERO",
+"exit": true
 },
 {
 "id": 6,
@@ -71988,11 +73001,12 @@
 {}
 ]
 },
-"speaker": "O_HERO"
+"speaker": "O_HERO",
+"exit": true
 }
 ]
 },
-"nextID": 7
+"nextID": 19
 }
 },
 {
@@ -72062,7 +73076,7 @@
 "id": 2,
 "choice": true,
 "text": {
-"en": "touche the keybord"
+"en": "*touch the keyboard*"
 },
 "voice": {
 "en": [
@@ -72083,7 +73097,7 @@
 {
 "id": 9,
 "text": {
-"en": "**warnig** **warnig**  **warnig** "
+"en": "**WARNING** **WARNING** **WARNING** "
 },
 "voice": {
 "en": [
@@ -72098,7 +73112,7 @@
 }
 ],
 "text": {
-"en": "open"
+"en": "open it"
 },
 "voice": {
 "en": [
@@ -72330,6 +73344,36 @@
 "properties": {
 "skip": true
 }
+}
+}
+],
+"songs": [
+{
+"name": "ACTIVE_MONSTER",
+"hz": 44100,
+"ch": 2,
+"bit": 16,
+"ms": 128014,
+"size": 3720244,
+"ogg": {
+"aid": "e1d8a160ccfe5e44"
+},
+"mp3": {
+"aid": "a4daeefdadcc485c"
+}
+},
+{
+"name": "MAIN_SONG",
+"hz": 48000,
+"ch": 2,
+"bit": 16,
+"ms": 240012,
+"size": 6944753,
+"ogg": {
+"aid": "51f35fda01b46764"
+},
+"mp3": {
+"aid": "41f4ff8170e8eb79"
 }
 }
 ]
